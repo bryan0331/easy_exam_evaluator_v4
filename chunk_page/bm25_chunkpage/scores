@@ -1,0 +1,12 @@
+name: bm25_chunkpage
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8719
+ 🔹 Answer Correctness        : 3.8667 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.3467 / 5.0
+ 🔹 Retrieval Relevance       : 4.24 / 5.0
+ 🔹 Answer Relevance          : 4.1467 / 5.0
+ 🔹 Context Precision         : 3.9867 / 5.0
+ 🔹 Context Recall            : 4.1333 / 5.0
+ ⏱️  Execution Time Cost (s)   : 4.892s (Max: 19.311s, Min: 0.659s)
+-------------------------------------------------------------------------------------

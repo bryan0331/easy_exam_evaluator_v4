@@ -1,0 +1,31 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: baseline_rewrite_hyde
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8663
+ 🔹 Answer Correctness        : 3.6267 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.3333 / 5.0
+ 🔹 Retrieval Relevance       : 4.0267 / 5.0
+ 🔹 Answer Relevance          : 4.0 / 5.0
+ 🔹 Context Precision         : 3.8933 / 5.0
+ 🔹 Context Recall            : 3.8 / 5.0
+ ⏱️  Execution Time Cost (s)   : 7.26s (Max: 23.349s, Min: 1.255s)
+-------------------------------------------------------------------------------------
+
+[🔵 Multi-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8389
+ 🔹 Answer Correctness        : 3.24 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.7 / 5.0
+ 🔹 Retrieval Relevance       : 4.14 / 5.0
+ 🔹 Answer Relevance          : 3.7333 / 5.0
+ 🔹 Context Precision         : 3.9933 / 5.0
+ 🔹 Context Recall            : 3.3733 / 5.0
+ ⏱️  Execution Time Cost (s)   : 20.225s (Max: 40.2s, Min: 8.157s)
+-------------------------------------------------------------------------------------
+
+[🔥 Deep Learning Exam [Pure Text No-RAG Stream]] Report file does not exist, skipping.
+
+==================================================================================================

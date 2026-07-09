@@ -1,0 +1,29 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: baseline_rewrite
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8624
+ 🔹 Answer Correctness        : 3.4 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.0533 / 5.0
+ 🔹 Retrieval Relevance       : 3.6933 / 5.0
+ 🔹 Answer Relevance          : 3.6133 / 5.0
+ 🔹 Context Precision         : 3.44 / 5.0
+ 🔹 Context Recall            : 3.3733 / 5.0
+ ⏱️  Execution Time Cost (s)   : 5.687s (Max: 18.866s, Min: 1.02s)
+-------------------------------------------------------------------------------------
+
+[🔵 Multi-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8406
+ 🔹 Answer Correctness        : 3.22 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.54 / 5.0
+ 🔹 Retrieval Relevance       : 3.8867 / 5.0
+ 🔹 Answer Relevance          : 3.66 / 5.0
+ 🔹 Context Precision         : 3.74 / 5.0
+ 🔹 Context Recall            : 3.02 / 5.0
+ ⏱️  Execution Time Cost (s)   : 23.02s (Max: 174.146s, Min: 6.611s)
+-------------------------------------------------------------------------------------

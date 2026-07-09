@@ -1,0 +1,30 @@
+name: k10_rewrite_2
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8655
+ 🔹 Answer Correctness        : 3.5867 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.04 / 5.0
+ 🔹 Retrieval Relevance       : 3.64 / 5.0
+ 🔹 Answer Relevance          : 3.88 / 5.0
+ 🔹 Context Precision         : 3.4533 / 5.0
+ 🔹 Context Recall            : 3.4533 / 5.0
+ ⏱️  Execution Time Cost (s)   : 5.705s (Max: 23.314s, Min: 0.792s)
+-------------------------------------------------------------------------------------
+
+[🔵 Multi-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8423
+ 🔹 Answer Correctness        : 3.1133 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.62 / 5.0
+ 🔹 Retrieval Relevance       : 3.6333 / 5.0
+ 🔹 Answer Relevance          : 3.7267 / 5.0
+ 🔹 Context Precision         : 3.18 / 5.0
+ 🔹 Context Recall            : 2.8067 / 5.0
+ ⏱️  Execution Time Cost (s)   : 16.051s (Max: 55.075s, Min: 4.951s)
+-------------------------------------------------------------------------------------
+
+[🔥 Deep Learning Exam [Pure Text No-RAG Stream]] Report file does not exist, skipping.
+
+==================================================================================================

@@ -1,0 +1,13 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: Rerank-bm25-baseline-with-06-weight
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8756
+ 🔹 Answer Correctness        : 3.92 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.44 / 5.0
+ 🔹 Retrieval Relevance       : 4.3333 / 5.0
+ 🔹 Answer Relevance          : 4.0533 / 5.0
+ 🔹 Context Precision         : 4.2 / 5.0
+ 🔹 Context Recall            : 4.32 / 5.0
+ ⏱️  Execution Time Cost (s)   : 16.822s (Max: 26.504s, Min: 1.208s)
+-------------------------------------------------------------------------------------

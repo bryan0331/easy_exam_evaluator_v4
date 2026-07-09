@@ -1,0 +1,13 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: k10_bm25
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8712
+ 🔹 Answer Correctness        : 3.88 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.2533 / 5.0
+ 🔹 Retrieval Relevance       : 4.2 / 5.0
+ 🔹 Answer Relevance          : 3.96 / 5.0
+ 🔹 Context Precision         : 4.24 / 5.0
+ 🔹 Context Recall            : 4.2533 / 5.0
+ ⏱️  Execution Time Cost (s)   : 5.226s (Max: 22.232s, Min: 0.983s)
+-------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: k5_rerank_2
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.881
+ 🔹 Answer Correctness        : 3.4933 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.9733 / 5.0
+ 🔹 Retrieval Relevance       : 4.0533 / 5.0
+ 🔹 Answer Relevance          : 3.9467 / 5.0
+ 🔹 Context Precision         : 3.9733 / 5.0
+ 🔹 Context Recall            : 4.0133 / 5.0
+ ⏱️  Execution Time Cost (s)   : 17.959s (Max: 180.092s, Min: 1.334s)
+-------------------------------------------------------------------------------------

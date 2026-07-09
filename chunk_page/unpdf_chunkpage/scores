@@ -1,0 +1,30 @@
+name: unpdf_chunkpage
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8664
+ 🔹 Answer Correctness        : 3.5333 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.12 / 5.0
+ 🔹 Retrieval Relevance       : 3.64 / 5.0
+ 🔹 Answer Relevance          : 3.8933 / 5.0
+ 🔹 Context Precision         : 3.4667 / 5.0
+ 🔹 Context Recall            : 3.4667 / 5.0
+ ⏱️  Execution Time Cost (s)   : 5.072s (Max: 16.425s, Min: 0.588s)
+-------------------------------------------------------------------------------------
+
+[🔵 Multi-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8404
+ 🔹 Answer Correctness        : 3.2 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.4933 / 5.0
+ 🔹 Retrieval Relevance       : 3.42 / 5.0
+ 🔹 Answer Relevance          : 3.58 / 5.0
+ 🔹 Context Precision         : 3.1467 / 5.0
+ 🔹 Context Recall            : 2.66 / 5.0
+ ⏱️  Execution Time Cost (s)   : 15.03s (Max: 36.6s, Min: 4.293s)
+-------------------------------------------------------------------------------------
+
+[🔥 Deep Learning Exam [Pure Text No-RAG Stream]] Report file does not exist, skipping.

@@ -1,0 +1,19 @@
+# 1. 忽略你的核心配置文件（保护 API Key 不泄露）
+config.py
+
+# 2. 忽略虚拟环境、Python 运行缓存
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 3. 忽略 IDE 本地配置文件（如 PyCharm 或 VS Code 的配置）
+.idea/
+.vscode/
+
+# 4.（可选）如果你不想把几百兆的原始数据集、中间过程文件传上去
+# dataset/
+# 💡 注意：如果你希望把最后的 final_eval_summary.json 传上去，但不想传原始大文件，可以像下面这样写：
+# dataset/llm_single.json
+# dataset/test_set_single_turn.json

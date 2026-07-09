@@ -1,0 +1,1757 @@
+[
+  {
+    "id": "multi-01-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-01-001-01.wav", "question_text": "What model type does the lecture associate with the example task of sentiment analysis?" },
+      { "role": "assistant", "expected_answer": "Sentiment analysis is the example task for sequence classification. The input is a sequence with variable length and the output is a label." },
+      { "role": "user", "question_audio": "audio/multi-01-001-02.wav", "question_text": "And how is it different from sequence labeling and from sequence-to-sequence?" },
+      { "role": "assistant", "expected_answer": "Sequence labeling also takes a sequence with variable length as input, but it outputs a labels sequence with the same length as the input; the example task is named entity recognition. Sequence to Sequence takes a sequence with variable length as input and outputs a sequence with variable length; the example task is summarization. So sequence classification outputs a single label, sequence labeling outputs one label per token, and sequence-to-sequence outputs a new sequence." }
+    ],
+    "context": [
+      {
+        "file": "01-Introduction.pdf",
+        "page": 60,
+        "text": "Model types\nSequence Classification:\n- Input:\n  - Sequence with variable length\n- Output:\n  - Label\n- Example task:\n  - Sentiment analysis"
+      },
+      {
+        "file": "01-Introduction.pdf",
+        "page": 61,
+        "text": "Model types\nSequence labeling:\n- Input:\n  - Sequence with variable length\n- Output:\n  - Labels sequence with same length\n- Example task:\n  - Named entity recognition"
+      },
+      {
+        "file": "01-Introduction.pdf",
+        "page": 62,
+        "text": "Model types\nSequence to Sequence model:\n- Input:\n  - Sequence with variable length\n- Output:\n  - Sequence variable length\n- Example task:\n  - Summerization"
+      }
+    ]
+  },
+  {
+    "id": "multi-01-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-01-002-01.wav", "question_text": "Why is the rule-based approach to NLP problematic according to the lecture?" },
+      { "role": "assistant", "expected_answer": "There is no fixed set of rules. Language changes over time (for example, 'while' was a noun meaning 'time' in the 18th century, and German genitive is used less often nowadays). Any language is constantly influenced by other languages (for example, 'to download' in German: 'Ich habe den Film downgeloaded' vs 'Ich habe den Film gedownloadet'). Classification of words into POS tags is not always clear (for example, in 'He has never been nearer the center of the financial establishment.', 'nearer' would need to be an adjective/adverb because only those form comparatives, but adjectives/adverbs cannot take objects like 'the center', so it must be a preposition)." },
+      { "role": "user", "question_audio": "audio/multi-01-002-02.wav", "question_text": "What does the corpus-based approach do differently to address this?" },
+      { "role": "assistant", "expected_answer": "A corpus is a large collection of annotated texts (or speech files). The advantages of corpus-based approaches are: automatically learn rules from data; statistical models so no hard decision; use machine learning approaches, possible since larger computation resources; the corpus will concentrate on the most common phenomena. The input is data (text corpora) and a machine learning algorithm, and the output is a statistical model." }
+    ],
+    "context": [
+      {
+        "file": "01-Introduction.pdf",
+        "page": 31,
+        "text": "Approaches to NLP\nProblem:\n- There is no fixed set of rules\n- Language changes over time:\n  - \"while\" was a noun meaning \"time\" (18th century)\n  - German: Genitive is used less often nowadays"
+      },
+      {
+        "file": "01-Introduction.pdf",
+        "page": 32,
+        "text": "Approaches to NLP\nProblem:\n- There is no fixed set of rules\n- Language changes over time:\n- A(ny?) language is constantly influenced by other languages\n  - How to use \"to download\" in German\n  - \"Ich habe den Film downgeloaded.\"\n  - \"Ich habe den Film gedownloadet.\""
+      },
+      {
+        "file": "01-Introduction.pdf",
+        "page": 33,
+        "text": "Approaches to NLP\nProblem:\n- There is no fixed set of rules\n- Language changes over time:\n- A(ny?) language is constantly influenced by other languages\n- Classification of words into POS tags not always clear\n  - \"He has never been nearer the center of the financial establishment.\"\n  - nearer:\n    - needs to be adjective/adverb since no other word type can form comparatives\n    - adjectives/adverbs cannot take objects (\"the center\") → therefore it is a preposition"
+      },
+      {
+        "file": "01-Introduction.pdf",
+        "page": 34,
+        "text": "Corpus-based Approaches to NLP\nCorpus = large collection of annotated texts (or speech files)\nAdvantages:\n- Automatically learn rules from data\n- Statistical Models → no hard decision\n- Use machine learning approaches\n  - Possible since larger computation resources\n- Corpus will concentrate on most common phenomes\nInput:\n- Data (Text corpora)\n- Machine learning algorithm\nOutput:\n- Statistical model"
+      }
+    ]
+  },
+  {
+    "id": "multi-02-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-02-001-01.wav", "question_text": "What is a morpheme, and how many morphemes are in the words 'hopeless' and 'hopelessness'?" },
+      { "role": "assistant", "expected_answer": "A morpheme is the smallest meaningful constitute of a word. 'Hopeless' (hope-less) has two morphemes. 'Hopelessness' (hope-less-ness) has three morphemes." },
+      { "role": "user", "question_audio": "audio/multi-02-001-02.wav", "question_text": "Then how does the lecture define a morphologically complex word versus a simple word?" },
+      { "role": "assistant", "expected_answer": "A simple word is a word consisting of one morpheme (examples: Book, Haus). A complex word is a word with more than one morpheme (example: books). A compound is a complex word too (examples: Bookstore, Bookstores)." }
+    ],
+    "context": [
+      {
+        "file": "02-Words.pdf",
+        "page": 17,
+        "text": "Morphemes\nMorpheme:\n- Smallest meaningful constitutes of a word\n- Example:\n  - nuts: nut and s\n- Two morphemes:\n  - Break-ing, hope-less, cheese-board\n- Three morphems\n  - Re-writ-ing, hope-less-ness, ear-plug-s"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 42,
+        "text": "Word types\nSimple\nWord consisting of one morpheme\nExample:\n- Book, Haus"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 43,
+        "text": "Word types\nSimple\nComplex\nWord with more than one morpheme\nExample:\n- books"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 44,
+        "text": "Word types\nSimple\nComplex\n- Compound\nWord with more than one morpheme\nExample:\n- Bookstore\n- Bookstores"
+      }
+    ]
+  },
+  {
+    "id": "multi-02-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-02-002-01.wav", "question_text": "What is the difference between analytic and synthetic languages in the lecture's classification?" },
+      { "role": "assistant", "expected_answer": "In analytic languages morphology plays a relatively modest role (examples: English, Yoruba, Vietnamese). Isolating languages are an extreme degree of analyticity (examples: Vietnamese, Yoruba). In synthetic languages morphology plays an important role (example: Swahili). Polysynthetic languages have an extraordinary amount of morphology." },
+      { "role": "user", "question_audio": "audio/multi-02-002-02.wav", "question_text": "And how do fusional and agglutinative languages compare?" },
+      { "role": "assistant", "expected_answer": "In fusional languages, morphemes combine different features. For example, in Spanish 'comi' (from 'comer'), the -i carries both first person and past tense. In German 'baute' (from 'bauen'), the -te carries first/third person and past tense. In agglutinative languages, morphemes are simply concatenated. For example in Finnish 'talossanikinko' (in my house, too?) decomposes into talo (house), (i)ssa (in), ni (my), kin (too), ko (question). Turkish is another agglutinative example." }
+    ],
+    "context": [
+      {
+        "file": "02-Words.pdf",
+        "page": 20,
+        "text": "Morphology and Languages\nAnalytic languages:\n- Morphology plays a relatively modest role\nExample:\n- English, Yoruba, Vietnamese"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 21,
+        "text": "Morphology and Languages\nAnalytic languages:\n- Morphology plays a relatively modest role\nIsolating:\n- Extreme degree of analyticity\nExamples:\n- Vietnamese, Yoruba"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 22,
+        "text": "Morphology and Languages\nSynthetic languages:\n- Morphology plays an important role\nExample:\n- Swahili"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 23,
+        "text": "Morphology and Languages\nSynthetic languages:\n- Morphology plays an important role\nPolysynthetic\n- Languages with extraordinary amount of morphology"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 25,
+        "text": "Morphology and Languages\nFusional languages:\n- Morphemes combine different features\nExample:\n- Spanish: comi (comer) - I ate\n  - -i:\n    - First person\n    - Past tense\n- German: baute (bauen)\n  - -te:\n    - First/Thirs person\n    - Past tense\nAgglutinative Languages\n- Morphemes are simple concatenated\nExample:\n- Finish:\n  - talossanikinko\n  - in my house, too?\n  - talo – house\n  - (i)ssa – in\n  - ni – my\n  - kin – too\n  - ko - question\n- Turkish"
+      }
+    ]
+  },
+  {
+    "id": "multi-02-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-02-003-01.wav", "question_text": "What are the three word formation processes covered in the lecture?" },
+      { "role": "assistant", "expected_answer": "The three word formation processes are: Inflection, Derivation, and Compounding. Inflection is the modification of the word to express different grammatical categories (lexeme to word-form formation; examples: Dog -> dogs, Write -> writes). Derivation is the process of forming a new word using an existing one, creating a new lexeme (examples: Happy -> happiness, Essen -> essbar). Compounding is creating a new word containing two or more pre-existing words (example: Apfel + Kuchen -> Apfelkuchen)." },
+      { "role": "user", "question_audio": "audio/multi-02-003-02.wav", "question_text": "And what are the four kinds of morphological progress (morphological processes) listed?" },
+      { "role": "assistant", "expected_answer": "The four kinds of morphological progress are: Concatenation (adding affixes to the stem, the most common approach; examples: Hope+less, Un+happy, Happy+er -> happier); Reduplication (part of the word is doubled; Tagalog example: basa/ba-basa for read/will read, Sulat/su-sulat for write/will write); Templates (roots and affixes are discontinuous; Hebrew examples: lomed/lamad for learn/learned, shotek/shatak for be quiet/was quiet); and Ablaut (morpheme-internal changes; examples: Sing-sang-sung, Mann-Männchen)." }
+    ],
+    "context": [
+      {
+        "file": "02-Words.pdf",
+        "page": 35,
+        "text": "Word formation\nInflection\nModification of the word to express different grammatical categories\nLexeme to word-form formation\nExamples:\n- Dog dogs\n- Write writes"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 36,
+        "text": "Word formation\nInflection\nDerivation\nProcess of forming a new word using an existing one\nCreating a new lexeme\nExamples:\n- Happy happiness\n- Essen essbar"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 37,
+        "text": "Word formation\nInflection\nDerivation\nCompounding\nCreating a new word containing two or more pre-existing words\nApfel+Kuchen Apfelkuchen"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 38,
+        "text": "Morphological Progress\nConcatenation\nAdding affixes to the stem\nMost common approach\nHope+less\nUn+happy\nHappy+er -> happier"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 39,
+        "text": "Morphological Progress\nConcatenation\nReduplication\nPart of the word is doubled\nTagalog:\n- basa (read) – ba-basa (will read)\n- Sulat (write) – su-sulat (will write)"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 40,
+        "text": "Morphological Progress\nConcatenation\nReduplication\nTemplates\nRoots and affixes are discontinuous\nExample:\n- Hebrew\nlomed (learn) – lamad (learned)\nshotek ( be quite) – shatak (was quite)"
+      },
+      {
+        "file": "02-Words.pdf",
+        "page": 41,
+        "text": "Morphological Progress\nConcatenation\nReduplication\nTemplates\nAblaut\nMorpheme internal changes\nExample\n- Sing-sang-sung\n- Mann - Männchen"
+      }
+    ]
+  },
+  {
+    "id": "multi-03-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-03-001-01.wav", "question_text": "How are words encoded as one-hot vectors in the lecture, and what are the properties of this encoding?" },
+      { "role": "assistant", "expected_answer": "Word Encoding uses 1-of-n encoding (also called 1-hot encoding): a vector of dimension vocab size where for the i-th word the i-th dimension of the vector is 1 and all other dimensions are 0. Properties: all words have similar representation, and there is a large number of features but the vectors are sparse." },
+      { "role": "user", "question_audio": "audio/multi-03-001-02.wav", "question_text": "Why does the lecture argue dense vectors work better?" },
+      { "role": "assistant", "expected_answer": "Short vectors may be easier to use as features in machine learning (less weights to tune). Dense vectors may generalize better than storing explicit counts. They may do better at capturing synonymy: car and automobile are synonyms but are distinct dimensions in a sparse encoding, so a word with car as a neighbor and a word with automobile as a neighbor should be similar but aren't. In practice, they appear to work better." }
+    ],
+    "context": [
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 17,
+        "text": "Input representation\nWord Encoding\n- 1 of n encoding / 1 hot encoding\n- Vector of dimension vocab size\n- i-th word:\n  - i-th dimension of the vector 1\n  - All other dimensions 0\nProperties\n- All words have similar representation\n- Large number of features, but sparse"
+      },
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 18,
+        "text": "Dense vectors\nShort vectors\n- Short vectors may be easier to use as features in machine learning (less weights to tune)\n- Dense vectors may generalize better than storing explicit counts\n- They may do better at capturing synonymy:\n  - car and automobile are synonyms; but are distinct dimensions\n  - a word with car as a neighbor and a word with automobile as a neighbor should be similar, but aren't\n- In practice, they appear to work better"
+      }
+    ]
+  },
+  {
+    "id": "multi-03-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-03-002-01.wav", "question_text": "Why is negative sampling used in Skip-gram training?" },
+      { "role": "assistant", "expected_answer": "Because skip-gram's softmax normalization requires a sum over the entire vocabulary, which is expensive. Negative sampling replaces this: rather than sum over the entire vocabulary, generate samples and sum over them, and instead of a multiclass classifier use a binary classifier with the sigmoid function." },
+      { "role": "user", "question_audio": "audio/multi-03-002-02.wav", "question_text": "How is the set NEG of negative samples constructed?" },
+      { "role": "assistant", "expected_answer": "NEG contains 2-20 words sampled from some distribution, for example uniform, unigram, or smoothed unigram. The smoothed variant raises probabilities to power 3/4 and renormalizes to get a distribution." }
+    ],
+    "context": [
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 58,
+        "text": "Skip-gram\nnormalization requires sum over entire vocabulary\nP_w(y | x) = exp{w^(in,x) . w^(out,y)} / sum_y' exp{w^(in,x) . w^(out,y')}"
+      },
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 62,
+        "text": "Negative Sampling\nrather than sum over entire vocabulary, generate samples and sum over them\ninstead of a multiclass classifier, use a binary classifier:\nmin_w sum_1<=t<=|T| sum_-c<=j<=c,j!=0 -log sigma(score(x_t, x_t+j, w)) + sum_x in NEG log sigma(score(x_t, x, w))\nwhere sigma is sigmoid function"
+      },
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 63,
+        "text": "Negative Sampling (Mikolov et al., 2013)\nNEG contains 2-20 words sampled from some distribution\n- e.g., uniform, unigram, or smoothed unigram\n- smoothed: raise probabilities to power 3/4, renormalize to get a distribution"
+      }
+    ]
+  },
+  {
+    "id": "multi-03-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-03-003-01.wav", "question_text": "Why is FastText useful for morphologically rich languages?" },
+      { "role": "assistant", "expected_answer": "In morphologically rich languages there is no parameter sharing for related forms (for example eat, eats, eaten, eater, eating), and standard word embeddings only have a representation for seen words. The idea behind FastText is to use a subword representation based on character n-grams, so the model can share information across related forms and handle unseen words." },
+      { "role": "user", "question_audio": "audio/multi-03-003-02.wav", "question_text": "How does FastText represent the target word and the context word differently?" },
+      { "role": "assistant", "expected_answer": "FastText is an extension of Word2Vec. The word embedding for the target word is the sum of character 3-grams to 6-grams plus the whole word itself. The word embedding for the context word is taken from the table without adding character n-grams." }
+    ],
+    "context": [
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 68,
+        "text": "Challenges\nMorphologically rich languages\n- No parameter sharing (for e.g. eat, eats, eaten, eater, eating)\n- Only representation for seen words\nIdea:\n- Use subword representation\n- Character n-grams"
+      },
+      {
+        "file": "03 - Neural Word Representations.pdf",
+        "page": 72,
+        "text": "FastText (extension of Word2Vec)\nWord embedding for target word\n- Sum of character 3-grams to 6-grams and whole word itself\nWord embedding for context word\n- Take embedding from table without adding character n-grams"
+      }
+    ]
+  },
+  {
+    "id": "multi-04-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-04-001-01.wav", "question_text": "Why does POS tagging need to consider context, according to the lecture?" },
+      { "role": "assistant", "expected_answer": "Words often have more than one POS. The lecture compares 'Time flies like an arrow' (Time noun, flies verb, like preposition, an determiner, arrow noun) with 'Fruit flies like a banana' (Fruit noun, flies noun, like verb, a determiner, banana noun). The word 'back' has multiple tags too: 'the back door' = JJ, 'on my back' = NN, 'win the voters back' = RB, 'promised to back the bill' = VB. The POS tagging problem is to determine the POS tag for a particular instance of a word given its context." },
+      { "role": "user", "question_audio": "audio/multi-04-001-02.wav", "question_text": "What is the universal tag set, and what tags does it contain?" },
+      { "role": "assistant", "expected_answer": "Many use smaller sets of coarser tags. The 'universal tag set' contains 12 tags: noun, verb, adjective, adverb, pronoun, determiner/article, adposition (preposition or postposition), numeral, conjunction, particle, punctuation, other." }
+    ],
+    "context": [
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 10,
+        "text": "POS Tagging: Ambiguity\nWords often have more than one POS\nCompare:\n- Time flies like an arrow\n- Fruit flies like a banana\nTime | flies | like | an | arrow\nnoun | verb | preposition | determiner | noun\nFruit | flies | like | a | banana\nnoun | noun | verb | determiner | noun"
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 11,
+        "text": "POS Tagging: Ambiguity\nWords often have more than one POS: back\n- The back door = JJ\n- On my back = NN\n- Win the voters back = RB\n- Promised to back the bill = VB\nThe POS tagging problem is to determine the POS tag for a particular instance of a word given its context."
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 8,
+        "text": "Universal Tag Set\nMany use smaller sets of coarser tags\ne.g., \"universal tag set\" containing 12 tags:\n- noun, verb, adjective, adverb, pronoun, determiner/article, adposition (preposition or postposition), numeral, conjunction, particle, punctuation, other"
+      }
+    ]
+  },
+  {
+    "id": "multi-04-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-04-002-01.wav", "question_text": "In Combinatory Categorial Grammar (CCG), what are the three kinds of categories and the two basic combination rules?" },
+      { "role": "assistant", "expected_answer": "Categories include atomic elements (typically a small set such as NP), and single-argument functions that take an argument category and return a value category. The set of categories is built from: A (atomic), (X/Y) which returns X if Y is on the right, and (X\\Y) which returns X if Y is on the left. The two basic rules are forward rule application X/Y Y -> X and backward rule application Y X\\Y -> X." },
+      { "role": "user", "question_audio": "audio/multi-04-002-02.wav", "question_text": "Walk through how 'United serves Miami' is parsed in CCG with these categories: United=NP, serves=(S\\NP)/NP, Miami=NP." },
+      { "role": "assistant", "expected_answer": "United is NP, Miami is NP, serves has category (S\\NP)/NP. First apply forward rule application: (S\\NP)/NP combines with NP on the right (Miami), returning S\\NP. Then apply backward rule application: NP on the left (United) combines with S\\NP, returning S. So 'United serves Miami' derives to S." }
+    ],
+    "context": [
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 43,
+        "text": "Categories\nAtomic elements\n- Typically small set (e.g. NP,...)\nSingle-argument Functions\n- Argument: category\n- Value: category\nSet of categories\n- A\n- (X/Y) if Y is right, return X\n- (X\\Y) if Y is left, return X"
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 44,
+        "text": "Lexicon\nCategories for each words\n- flight: N\n- Miami NP\n- Cancel (S\\NP)/NP\n  - NP on right, then return S\\NP\n  - Then NP on left to build S"
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 45,
+        "text": "Rules\nBasic rules\n- Forward rule application\n  - X / Y Y -> X\n- Backward rule application\n  - Y X\\Y -> X\nApplication\nUnited NP | serves (S\\NP)/NP | Miami NP\n-> S\\NP (forward)\n-> S (backward)\nAdditional rules to make more powerful than basic phrase-structure grammar"
+      }
+    ]
+  },
+  {
+    "id": "multi-04-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-04-003-01.wav", "question_text": "What is the idea behind dependency grammar, and how does it differ from constituency-based phrase-structure grammar?" },
+      { "role": "assistant", "expected_answer": "Dependency grammar is a different approach to describe sentence structure. The idea: describe the sentence by directed binary relations between words, with typed relations between heads and dependency, plus an additional root node. Unlike constituency grammar which builds phrases, dependency grammar directly links words to their head." },
+      { "role": "user", "question_audio": "audio/multi-04-003-02.wav", "question_text": "What advantages does dependency grammar offer, and what restrictions does its formalism impose?" },
+      { "role": "assistant", "expected_answer": "Advantages: handles morphologically rich languages, free word order (object can be before and after location adverbial), and connection to semantics. Formalism: a dependency graph G(V,A) where V are vertices corresponding to words and A are arcs corresponding to relations. Restrictions on the graph: it must be connected, it must have a designated root node, and it must be acyclic or planar. An arc is projective when the head is connected to all nodes between head and dependent; some parsing algorithms can only produce projective trees." }
+    ],
+    "context": [
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 47,
+        "text": "Dependency structure\nDifferent approach to describe sentence structure\nIdea:\n- Describe by directed binary relation between words\n- Typed relation between heads and dependency\n- Additional root node"
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 48,
+        "text": "Advantage\nMorphological rich\nFree word order\n- Object can be before and after location adverbial\nConnection to semantics"
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 51,
+        "text": "Formalism\nGraph G(V,A)\n- V: Vertices correspond to words\n- A: arcs corresponding to relations\nRestrictions:\n- Connected\n- Designated root node\n- Acyclic or planar"
+      },
+      {
+        "file": "04-SentenceStructure.pdf",
+        "page": 52,
+        "text": "Projectivity\nArc is projective:\n- Head is connected to all nodes between head an dependent\nCounter-example\nSome parsing algorithms can only produce projective trees"
+      }
+    ]
+  },
+  {
+    "id": "multi-05-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-05-001-01.wav", "question_text": "What is the difference between homonyms, homographs, and homophones?" },
+      { "role": "assistant", "expected_answer": "Homonyms are words that share a form but have unrelated, distinct meanings (for example bank1 financial institution vs bank2 sloping land; bat1 club for hitting a ball vs bat2 nocturnal flying mammal). Homographs have the same spelling but different meanings (bank/bank, bat/bat). Homophones have the same pronunciation but different meanings (write/right, piece/peace)." },
+      { "role": "user", "question_audio": "audio/multi-05-001-02.wav", "question_text": "How is 'sense' defined in WordNet?" },
+      { "role": "assistant", "expected_answer": "In WordNet, sense is defined via a synset (synonym set): a set of near-synonyms that instantiates a sense or concept, with a gloss. For example, the noun chump has the gloss 'a person who is gullible and easy to take advantage of'. This sense of chump is shared by 9 words: chump1, fool2, gull1, mark2, patsy1, fall guy1, sucker1, soft touch1, mug2. Each of these senses has this same gloss; not every sense (for example, sense 2 of gull is the aquatic bird)." }
+    ],
+    "context": [
+      {
+        "file": "05-Semantics.pdf",
+        "page": 18,
+        "text": "Homonymy\nhomonyms: words that share a form but have unrelated, distinct meanings:\n- bank1: financial institution    bank2: sloping land\n- bat1: club for hitting a ball   bat2: nocturnal flying mammal\nhomographs: same spelling, different meanings\n- bank/bank, bat/bat\nhomophones: same pronunciation, different meanings\n- write/right, piece/peace"
+      },
+      {
+        "file": "05-Semantics.pdf",
+        "page": 24,
+        "text": "How is \"sense\" defined in WordNet?\nSynset (synonym set): set of near-synonyms; instantiates a sense or concept, with a gloss\nExample: chump as a noun with gloss:\n- \"a person who is gullible and easy to take advantage of\"\nThis sense of chump is shared by 9 words:\n- chump1, fool2, gull1, mark2, patsy1, fall guy1, sucker1, soft touch1, mug2\nEach of these senses have this same gloss\n- not every sense; sense 2 of gull is the aquatic bird"
+      }
+    ]
+  },
+  {
+    "id": "multi-05-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-05-002-01.wav", "question_text": "What is PropBank and how does it use Arg0/Arg1 for semantic roles?" },
+      { "role": "assistant", "expected_answer": "PropBank (The Proposition Bank) is sentences with semantic roles, an annotation of Penn TreeBank that focuses on verbs. The idea: each sense of word has specific roles (Arg0, Arg1, ...). Arg0 is the PROTO-AGENT, Arg1 is the PROTO-PATIENT, and remaining args are less consistent. Example agree.01: Arg0 Agreer, Arg1 Proposition, Arg2 Other entity agreeing. ArgMs represent modifications: TMP (when?), LOC (where?), DIR (where to/from?), MNR (how?), PRP/CAU (why?), REC, ADV (miscellaneous), PRD (secondary predication)." },
+      { "role": "user", "question_audio": "audio/multi-05-002-02.wav", "question_text": "And how is FrameNet different?" },
+      { "role": "assistant", "expected_answer": "FrameNet's motivation is inference about situations with different verbs (for example 'The price of bananas increased 5%', 'rose 5%', 'There has been a 5% rise in the price of bananas'). The approach is specific for a frame: each frame is a background knowledge structure with complex individual relations and common-sense background information (example: Change_position_on_a_scale frame consists of words that indicate the change of an Item's position on a scale, the Attribute, from a starting point (Initial value) to an end point (Final value)). Frames have core roles (frame specific) and non-core roles (general properties, comparable to Arg_M in Propbank), plus relations between frames (for example, Cause change of position on a scale and Change of position on a scale)." }
+    ],
+    "context": [
+      {
+        "file": "05-Semantics.pdf",
+        "page": 51,
+        "text": "The Proposition Bank (PropBank)\nSentences with semantic roles\n- Annotation of Penn TreeBank\n- Focus on verbs\nIdea:\n- Each sense of word has specific roles (Arg0, Arg1, ...)\n- Arg0: PROTO-AGENT\n- Arg1: PROTO-PATIENT\n- Remaining less consistent\nExample\nagree.01\n- Arg0: Agreer\n- Arg1: Proposition\n- Arg2: Other entity agreeing\n- Ex1: [Arg0 The group] agreed [Arg1 it wouldn't make an offer].\n- Ex2: [ArgM-TMP Usually] [Arg0 John] agrees [Arg2 with Mary] [Arg1 on everything]."
+      },
+      {
+        "file": "05-Semantics.pdf",
+        "page": 53,
+        "text": "The Proposition Bank (PropBank)\nArgMs\n- Represent modifications\nTMP when? yesterday evening, now\nLOC where? at the museum, in San Francisco\nDIR where to/from? down, to Bangkok\nMNR how? clearly, with much enthusiasm\nPRP/CAU why? because ... , in response to the ruling\nREC REC themselves, each other\nADV miscellaneous\nPRD secondary predication ...ate the meat raw"
+      },
+      {
+        "file": "05-Semantics.pdf",
+        "page": 55,
+        "text": "FrameNet\nMotivation:\n- Inference about situations with different verbs\n  - [Arg1 The price of bananas] increased [Arg2 5%].\n  - [Arg1 The price of bananas] rose [Arg2 5%].\n  - There has been a [Arg2 5%] rise [Arg1 in the price of bananas].\nApproach:\n- Specific for a frame"
+      },
+      {
+        "file": "05-Semantics.pdf",
+        "page": 56,
+        "text": "FrameNet\nFrame\nMotivation:\n- reservation, flight, travel, buy, price, cost, fare, rates, meal, plane\n- Complex individual relations\n- Common-sense background information\nBackground knowledge structure\nExample\n- Change_position_on_a_scale\n- This frame consists of words that indicate the change of an Item's position on a scale (the Attribute) from a starting point (Initial value) to an end point (Final value)."
+      },
+      {
+        "file": "05-Semantics.pdf",
+        "page": 57,
+        "text": "FrameNet\nFrame\nCore roles:\n- Frame specific\nNon-core roles\n- General properties\n- Comparable to Arg_M in Propbank\nRelations between frames\nExample\n- Cause change of position on a scale\n- Change of position on a scale"
+      }
+    ]
+  },
+  {
+    "id": "multi-05-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-05-003-01.wav", "question_text": "What is the principle of compositionality, and what challenge does it address?" },
+      { "role": "assistant", "expected_answer": "Compositional semantics studies the meaning of sentences. The challenge is the infinite number of sentences. The principle of compositionality (Frege): the meaning of an expression depends on the meaning of its parts and how they are put together." },
+      { "role": "user", "question_audio": "audio/multi-05-003-02.wav", "question_text": "What are the building blocks of a formal meaning representation, in terms of vocabulary, objects, properties, and relations?" },
+      { "role": "assistant", "expected_answer": "Vocabulary has two parts: non-logical (open-ended set of names for objects, linking to a model of the world) and logical (a closed set of symbols, operators, quantifiers). Objects are elements. Properties are sets of elements. Relations are sets of tuples." }
+    ],
+    "context": [
+      {
+        "file": "05-Semantics.pdf",
+        "page": 30,
+        "text": "Compositional semantics\nMeaning of a sentences\nChallenge:\n- Infinty number of sentences\nPrinciple of compositionality (Frege):\n- The meaning of an expression depends on the meaning of its parts and how they are put together."
+      },
+      {
+        "file": "05-Semantics.pdf",
+        "page": 33,
+        "text": "Formal Meaning representation\nVocabulary:\n- Non-logical\n  - Open-ended\n  - Set of names (objects, ...)\n    - Link to a model of the world\n- Logical\n  - Close set\n  - Symbols, operators, quantifiers,...\nObjects:\n- Elements\nProperties\n- Sets of elements\nRelations\n- Set of tuples"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-001-01.wav", "question_text": "What new paradigm do Large Language Models introduce, and what are their two main properties?" },
+      { "role": "assistant", "expected_answer": "LLMs are a new paradigm to perform NLP tasks using large language models. The two properties are: (1) Perform multiple tasks via natural language task description, and (2) Zero-shot ability to perform unknown tasks." },
+      { "role": "user", "question_audio": "audio/multi-12-001-02.wav", "question_text": "And how are LLMs created?" },
+      { "role": "assistant", "expected_answer": "LLMs are created by pre-training on large amounts of data." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 7,
+        "text": "Large Language Models\nNew paradigm to perform NLP tasks using large language models\nProperties\n- Perform multiple tasks\n  - Natural language task description\n- Zero-shot:\n  - Perform unknown tasks\nCreation\n- Pre-trained on large amounts of data"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-002-01.wav", "question_text": "Why is having dedicated single task models for each NLP task limiting?" },
+      { "role": "assistant", "expected_answer": "Because there is a dedicate model for each task (Named-Entity recognition, Machine translation, POS Tagging), and everything has to be learned for each task. This motivates the question: how can we share information between tasks?" },
+      { "role": "user", "question_audio": "audio/multi-12-002-02.wav", "question_text": "What approaches to knowledge sharing does the lecture describe?" },
+      { "role": "assistant", "expected_answer": "Three approaches: Feature representation (cascaded of different models, e.g. add NE annotation to input for machine translation, like 'I fly to New/City York/City'); Shared architecture (train parts of the network jointly); and Specify task in input (discrete task description like a <SA> or <MT> token, while Large Language Models use a natural language description like 'Translate:')." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 9,
+        "text": "Single task models\nSituation\n- Dedicate models for each task\n  - Named-Entity recognition\n  - Machine translation\n  - POS Tagging\n- Everything has to be learned for each task\nHow can we share information between tasks?"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 10,
+        "text": "Knowledge sharing\nFeature representation\n- Cascaded of different models\n- Add NE annotation to input for machine translation\n  - E.g. I fly to New/City York/City"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 11,
+        "text": "Knowledge sharing\nFeature representation\nShared architecture\n- Train (parts) of the network jointly"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 14,
+        "text": "Knowledge sharing\nFeature representation\nShared architecture\nSpecify task in input\nLarge Language Model\n- Natural language description"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-003-01.wav", "question_text": "How does the back-end use an LLM in an application?" },
+      { "role": "assistant", "expected_answer": "The back-end has clear definition of task through the front-end and performs a single task. Technical implications: the developer can optimize the natural language description/prompt, and the developer needs to parse the response to provide output." },
+      { "role": "user", "question_audio": "audio/multi-12-003-02.wav", "question_text": "How is this different from the front-end's situation?" },
+      { "role": "assistant", "expected_answer": "The front-end has no direct influence on the prompt, typically involves multi-turn conversations, and is controlled only through the system prompt." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 16,
+        "text": "Application\nBack-end\n- Clear defintion of task through front-end\n- Perfrom single task\n- Technical implications\n  - Developer can optimize natural language description/ prompt\n  - Developer needs to parse repsonse to provide output"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 17,
+        "text": "Application\nBack-end\nFront-end\n- No direct influence on the prompt\n- Typically multi-turn conversations\n- Technical implications\n  - Controll only through system prompt"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-004",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-004-01.wav", "question_text": "How does the sequence-to-sequence view describe decoder-based models?" },
+      { "role": "assistant", "expected_answer": "Decoder-based models are unidirectional and use next word prediction as the loss. The Prefix LM variant uses bidirectional attention for the prefix." },
+      { "role": "user", "question_audio": "audio/multi-12-004-02.wav", "question_text": "And how do encoder-decoder models differ?" },
+      { "role": "assistant", "expected_answer": "Encoder-decoder models have a bidirectional encoder and a unidirectional decoder, with next word prediction as the loss." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 20,
+        "text": "Sequence-to-Sequence view\nDecoder-based models\n- Unidirectional\n- Loss: Next word prediction\n- Prefix LM:\n  - Bidirectional attention for prefix"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 21,
+        "text": "Decoder-based models\n- Unidirectional\nEncoder-Decoder models\n- Bidrectional Encoder\n- Unidirectional Decoder\n- Loss: Next word prediction"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-005",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-005-01.wav", "question_text": "How is BART pre-trained?" },
+      { "role": "assistant", "expected_answer": "BART involves corruption of the input sequence and auto-regressive generation in the target. The corruption types are Token Masking, Token Deletion, Text infilling, Sentence Permulation, and Document Rotation." },
+      { "role": "user", "question_audio": "audio/multi-12-005-02.wav", "question_text": "How does PEGASUS extend this idea?" },
+      { "role": "assistant", "expected_answer": "PEGASUS is an encoder-decoder model that adds Gap sentence generation (GSG) to the MLM objective. Gap sentences are selected by: Random, Lead (first m sentences), or Principal (top-m scored sentences by importance, where importance is approximated by token overlap between a sentence and the rest)." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 24,
+        "text": "Encoder-Decoder\nBART:\n- Corruption of the input sequence\n- Auto-regressive generation in the target\nCorruption:\n- Token Masking\n- Token Deletion\n- Text infilling\n- Sentence Permulation\n- Document Rotation"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 25,
+        "text": "Encoder-Decoder\nPEGASUS\n- Encoder-decoder model\nIn addition to MLM objective\n- Gap sentence generation (GSG)\nHow to select gap sentences?\n- Random\n- Lead: First m sentences\n- Principal: top-m scored sentences by importance\n  - Importance approximated by token overlap between a sentence and the rest"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-006",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-006-01.wav", "question_text": "What's the training advantage of the decoder-only architecture?" },
+      { "role": "assistant", "expected_answer": "Decoder-only uses self-supervised learning with next word prediction. This is efficient training because there are several feedbacks per example." },
+      { "role": "user", "question_audio": "audio/multi-12-006-02.wav", "question_text": "And what are its architectural disadvantages?" },
+      { "role": "assistant", "expected_answer": "The disadvantages are no separation of input/output and uni-direction procession. However, the current status is that with large models there is no significant problem." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 26,
+        "text": "Decoder-only\nSelf-supervised learning\n- Next word prediction\n  - Efficient Training\n    - Several feedbacks per example\nArchitecture disadvantage:\n- No separation of input/output\n- Uni-direction procession\n  - Current status\n    - With large models no significant problem"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-007",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-007-01.wav", "question_text": "What does zero-shot ability mean for an LLM, and what does it rely on?" },
+      { "role": "assistant", "expected_answer": "Zero-shot ability means performing a task with no examples and no gradient updates. It relies on the LLM's ability to predict the most probable next token." },
+      { "role": "user", "question_audio": "audio/multi-12-007-02.wav", "question_text": "What's the difference between generative and discriminative zero-shot use?" },
+      { "role": "assistant", "expected_answer": "Generative transforms the task into completion tasks (for example, 'The sentence \"I fly to New York\" mentioned the city ...'). Discriminative compares different possible text sequences (for example, P(\"I fly to New York\" means that I depart from New York) < P(\"I fly to New York\" means that I arrive in New York))." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 32,
+        "text": "Zero-shot abilities\nPerform task:\n- No examples\n- No gradient updates\nRely on ability to predict most probable next token"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 33,
+        "text": "Zero-shot abilities\nGenerative:\n- Transform task into completion tasks\nThe sentence \"I fly to New York\" mentioned the city …"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 34,
+        "text": "Zero-shot abilities\nGenerative:\nDiscriminative\n- Compare different possible text sequences\nP(\"I fly to New York\" means that I depart from New York) < P(\"I fly to New York\" means that I arrive in New York)"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-008",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-008-01.wav", "question_text": "Define prompting in the LLM context." },
+      { "role": "assistant", "expected_answer": "Prompting is encouraging a pre-trained model to make particular predictions by providing a 'prompt' specifying the task to be done." },
+      { "role": "user", "question_audio": "audio/multi-12-008-02.wav", "question_text": "How does prompting differ from fine tuning?" },
+      { "role": "assistant", "expected_answer": "Prompting describes the task in natural language to convert it to a completion task (for example 'Translate English to German: school ->'). Fine tuning gives several examples and updates parameters (for example, house -> Haus, then gradient update; Car -> Auto, then gradient update; then School ->)." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 35,
+        "text": "Prompting\nEncouraging a pre-trained model to make particular predictions by providing a \"prompt\" specifying the task to be done."
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 37,
+        "text": "Prompting vs fine tuning\nDescribe task in natural language to convert it to a completion task\nExample:\n- Translate English to German: school ->\nGive several examples and update parameters\nhouse -> Haus\nGradient update\nCar -> Auto\nGradient update\nGradient update\nSchool ->"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-009",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-009-01.wav", "question_text": "Walk me through prompt addition: what is the template and how is it filled?" },
+      { "role": "assistant", "expected_answer": "The template is a Natural Language description with slots for X (Input) and Z (Answer). The input slot x is filled with the example. For sentiment classification: Template '[x] Overall, it was a [z] movie' + Input 'I love this movie' -> Prompt 'I love this movie. Overall it was a [z] movie.'" },
+      { "role": "user", "question_audio": "audio/multi-12-009-02.wav", "question_text": "What template would NER and Summarization use?" },
+      { "role": "assistant", "expected_answer": "NER template: '[x1] [x2] is a [z] entity', with input X1='Mike went to Paris.' and X2='Paris', giving prompt 'Mike went to Paris. Paris is a [z] entity'. Summarization template: '[X] TL;DR: [Z]'. Translation template: 'English: [X] German: [Z]'." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 40,
+        "text": "Prompt addition\nTemplate:\n- Natural Language description with slots for\n  - X: Input\n  - Z: Answer\nFill input slot x with example\nExamples:\n- Sentiment Classification\n  - Template: [x] Overall, it was a [z] movie\n  - Input: I love this movie\n  - Prompt:\n    - \"I love this movie. Overall it was a [z] movie.\""
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 41,
+        "text": "Prompt addition\nExamples:\n- Sentiment Classification\n- NER\n  - Template: [x1] [x2] is a [z] entity\n  - Input:\n    - X1: Mike went to Paris.\n    - X2: Paris\n  - Prompt:\n    - \"Mike went to Paris. Paris is a [z] entity\""
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 42,
+        "text": "Prompt addition\nExamples:\n- Sentiment Classification\n- NER\n- Summarization\n  - Template: [X] TL;DR: [Z]\n  - Input:\n    - X1: Natural language processing is the field,…"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 43,
+        "text": "Prompt addition\nExamples:\n- Sentiment Classification\n- NER\n- Summarization\n- Translation\n  - Template: English: [X] German: [Z]\n  - Input:\n    - X1: I go home"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-010",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-010-01.wav", "question_text": "What's the difference between a prefix prompt and a cloze prompt?" },
+      { "role": "assistant", "expected_answer": "Prefix prompt: Input text entirely before z. Example: 'Template: English: [X] German: [Z]'. Cloze prompt: Z in the middle of the prompt. Example: '[x] Overall, it was a [z] movie'." },
+      { "role": "user", "question_audio": "audio/multi-12-010-02.wav", "question_text": "And how do these relate to the answer shape?" },
+      { "role": "assistant", "expected_answer": "Tokens (single token) is a basic shape. Span (short multi-token span) is usually used with cloze prompts. Sentence (long prediction) is typically used with prefix prompts for text generation." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 44,
+        "text": "Prompt types\nPrefix prompt:\n- Input text entirely before z\nExample:\n- Template: English: [X] German: [Z]\nCloze prompt\n- Z in the middle of the prompt\nExample:\n- [x] Overall, it was a [z] movie"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 51,
+        "text": "Answer shape\nTokens:\n- Single token\nSpan\n- Short multi-token span\n- Usually with cloze prompts\nSentence\n- Long prediction\n- Typically with prefix prompts for text generation"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-011",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-011-01.wav", "question_text": "How does answer prediction work after prompt addition?" },
+      { "role": "assistant", "expected_answer": "A large language model is used to predict [z]. The possible answers Z can be the whole vocabulary or a small subset (e.g. Excellent, good, OK, bad, horrible). The filled prompt replaces [z] by one element of Z. The answered prompt is the filled prompt with highest probability: z_hat = max_{z in Z} P(f(x', z))." },
+      { "role": "user", "question_audio": "audio/multi-12-011-02.wav", "question_text": "What scoring functions are used?" },
+      { "role": "assistant", "expected_answer": "The most common scoring is predicted likelihood of the language model. Problem: cloze prompts for right to left language models. Additional scoring options: Perplexity, and Channel (conditional probability of the reverse direction, P(x|c,z))." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 47,
+        "text": "Answer Prediction\nUse large language model to predict [z]\n- Possible answers Z\n  - Whole vocabulary\n  - Small subset\n    - Excellent, good, OK, bad, horrible\nFilled prompt:\n- Replace [z] by one element of Z\nAnswered Prompt:\n- Filled prompt with highest probability\n- z_hat = max_{z in Z} P(f(x', z))"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 48,
+        "text": "Scoring Function\nMost common:\n- Predicted likelihood of the language model\nProblem:\n- Cloze prompts for right to left language models\nAdditional scoring\n- Perplexity\n- Channel:\n  - Conditional probability of the reverse direction\n  - P(x|c,z)"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-012",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-012-01.wav", "question_text": "What is answer mapping, and what is the goal of answer engineering?" },
+      { "role": "assistant", "expected_answer": "Answer mapping maps prediction [z] to an answer, with the simple case being Identity. For sentiment classification with template '[x] Overall, it was a [z] movie' and input 'I love this movie', the answered prompt 'I love this movie. Overall it was a fantastic movie' maps to 'Positive'. The goal of answer engineering is to match the model output to the output representation of the task (matching from the answer space such as Interesting/Fantastic/Happy/Boring/1-star to positive or negative)." },
+      { "role": "user", "question_audio": "audio/multi-12-012-02.wav", "question_text": "What's the difference between unconstrained and constrained answer spaces?" },
+      { "role": "assistant", "expected_answer": "Unconstraint spaces: All tokens of the language model. Constraint Spaces: Only allow for specific terms, e.g. NER or Multiple choice question answering." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 52,
+        "text": "Answer Mapping\nMap prediction [z] to answer\n- Simple:\n  - Identity\nExamples:\n- Sentiment Classification\n  - Template: [x] Overall, it was a [z] movie\n  - Input: I love this movie\n  - Prompt:\n    - \"I love this movie. Overall it was a [z] movie.\"\n  - Answered Prompt\n    - \"I love this movie. Overall it was a fantastic movie.\"\n  - Mapping:\n    - Positive"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 53,
+        "text": "Answer Engineering\nTask:\n- Match model output to output representation of the task\nPositiv\nNegativ\nInteresting\nFantastic\nHappy\nBoring\n1-star\nAnswer space"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 54,
+        "text": "Manually Design\nUnconstraint spaces:\n- All tokens of the language model\nConstraint Spaces\n- Only allow for specific terms\n- E.g.\n  - NER\n  - Multiple choice question answering"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-013",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-013-01.wav", "question_text": "What is answer paraphrasing and why use it?" },
+      { "role": "assistant", "expected_answer": "Answer paraphrasing addresses the problem that a single answer score is not robust. We generate paraphrases of the answer, and the probability of a prediction is the sum over all paraphrases: P(y|x) = sum_{z in para(z')} P(z|x). Example: for Positive paraphrases are Good, Brilliant, Excellent." },
+      { "role": "user", "question_audio": "audio/multi-12-013-02.wav", "question_text": "What other discrete answer search techniques are there?" },
+      { "role": "assistant", "expected_answer": "Prune-to-search: automatically find the restricted set of possible answers ('verbalizations'). Label Decomposition: decomposition relation to its constituent words; for example, city_of_death decomposes to Person, city, death." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 55,
+        "text": "Discrete Answer Search\nAnswer paraphrasing:\n- Single answer score not robust\nGenerate paraphrases of the answer\nProbability of prediction sum over all paraphrases\n- P(y|x) = sum_{z in para(z')} P(z|x)\nExample:\n- Positive:\n  - Good\n  - Brilliant\n  - Excellent"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 56,
+        "text": "Discrete Answer Search\nAnswer paraphrasing\nPrune-to-search\n- Automatically find the restricted set of possible answers (\"verbalizations\")"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 57,
+        "text": "Discrete Answer Search\nAnswer paraphrasing\nPrune-to-search\nLabel Decomposition\n- Decomposition relation to its constituent words\nExample\n- city_of_death\n  - Person, city, death"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-014",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-014-01.wav", "question_text": "What is the idea behind expanding (prompt expansion)?" },
+      { "role": "assistant", "expected_answer": "The idea is to provide additional context to improve prediction." },
+      { "role": "user", "question_audio": "audio/multi-12-014-02.wav", "question_text": "What methods of expansion are listed?" },
+      { "role": "assistant", "expected_answer": "Prompt Ensemble, Prompt Augmentation, Prompt Composition, Prompt Decomposition, and Prompt Sharing." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 59,
+        "text": "Expanding\nIdea:\n- Provide additional context to improve prediction\nPrompt Ensemble\nPrompt Augmentation\nPrompt Composition\nPrompt Decomposition\nPrompt Sharing"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-015",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-015-01.wav", "question_text": "What is Prompt Ensemble and what are its advantages?" },
+      { "role": "assistant", "expected_answer": "Prompt Ensemble uses multiple prompts in parallel. Advantages: combine complementary strength, and stabilize. Example: Subject 'China'; Relation 'isCapital' is queried via three prompts PR1 'China's capital is [MASK]', PR2 '[MASK] is the capital of China', PR3 'The capital of China is [MASK]'." },
+      { "role": "user", "question_audio": "audio/multi-12-015-02.wav", "question_text": "How are the outputs combined?" },
+      { "role": "assistant", "expected_answer": "For classification: uniform averaging, weighted averaging, majority vote. For generation: joint decoding." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 60,
+        "text": "Prompt Ensemble\nIdea:\n- Use multiple prompts in parallel\nAdvantages:\n- Combine complementary strength\n- Stabilize\nMethods:\n- Classification\n  - Uniform averaging\n  - Weighted averaging\n  - Majority vote\n- Generation\n  - Joint decoding\nInput Subject: China; Relation: isCapital\nPR1 China's capital is [MASK].\nPR2 [MASK] is the capital of China.\nPR3 The capital of China is [MASK]."
+      }
+    ]
+  },
+  {
+    "id": "multi-12-016",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-016-01.wav", "question_text": "Compare Prompt Decomposition and Prompt Composition with examples." },
+      { "role": "assistant", "expected_answer": "Prompt Decomposition is for tasks with several predictions: divide tasks and perform individual prompts. Example: input X 'Mike went to New York yesterday.' decomposes into Sub-PR1 '[X] Mike is [MASK] entity type.' and Sub-PR2 '[X] New York is [MASK] entity type.' Prompt Composition is for composable tasks: use subprompts for sub-tasks. Example for relation extraction with input X 'Google became a subsidiary of Alphabet.': Sub-PR1 '[X] The [MASK] Google.', Sub-PR2 '[X] The [MASK] Alphabet.', Sub-PR3 '[X] Google [MASK] Alphabet.' compose to PR '[X] The [MASK] Google [MASK] the [MASK] Alphabet.'" },
+      { "role": "user", "question_audio": "audio/multi-12-016-02.wav", "question_text": "So decomposition divides, and composition merges?" },
+      { "role": "assistant", "expected_answer": "Yes. Decomposition divides one task that needs several predictions into individual prompts. Composition uses several subprompts for sub-tasks and combines them into a composed prompt." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 61,
+        "text": "Prompt Decomposition\nTask:\n- Several predictions\nApproach:\n- Divide tasks and perform individual prompts\nInput (X) Mike went to New York yesterday.\nPR [X] Mike is [MASK] entity type, New York is [MASK] entity type.\nSub-PR1 [X] Mike is [MASK] entity type.\nSub-PR2 [X] New York is [MASK] entity type."
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 62,
+        "text": "Prompt Composition\nComposable task:\n- Use subprompts for sub-tasks\nExample:\n- Relation extraction\nInput (X) Google became a subsidiary of Alphabet.\nSub-PR1 [X] The [MASK] Google.\nSub-PR2 [X] The [MASK] Alphabet.\nSub-PR3 [X] Google [MASK] Alphabet.\nPR [X] The [MASK] Google [MASK] the [MASK] Alphabet."
+      }
+    ]
+  },
+  {
+    "id": "multi-12-017",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-017-01.wav", "question_text": "What is in-context learning?" },
+      { "role": "assistant", "expected_answer": "In-context learning (ICL) demonstrates the answer with examples, also called few-shot learning: the LLM learns through the given context to perform the task. Example: input 'Add up two numbers: 6, 8' with Ans-PR1 '1 + 1 = 2', Ans-PR2 '2 + 5 = 9', and PR '6 + 8 = [MASK]'. Another example: 'Translate English to German: House -> Haus, Car -> Auto, School -> ...'" },
+      { "role": "user", "question_audio": "audio/multi-12-017-02.wav", "question_text": "What are the two main challenges of ICL?" },
+      { "role": "assistant", "expected_answer": "Sample selection and sample ordering." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 64,
+        "text": "In-context Learning (ICL)\nDemonstrate answer with examples\n- In-context learning\n  - Learn through the given context to perform the task\n- Few-shot learning\nInput Add up two numbers: 6, 8\nAns-PR1 1 + 1 = 2\nAns-PR2 2 + 5 = 9\nPR 6 + 8 = [MASK]"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 65,
+        "text": "In-context Learning (ICL)\nDemonstrate answer with examples\nExample\n- Translate English to German:\n- House -> Haus\n- Car -> Auto\n- School -> …"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 66,
+        "text": "In-context Learning (ICL)\nChallenges:\n- Sample selection\n- Sample ordering"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-018",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-018-01.wav", "question_text": "How are good ICL examples selected?" },
+      { "role": "assistant", "expected_answer": "Unsupervised learning: L2 distance / cosine similarity between example and input. Supervised learning: Dense passage retriever trained with good task performance. Reinforcement learning: decisions to select examples." },
+      { "role": "user", "question_audio": "audio/multi-12-018-02.wav", "question_text": "And how should the selected examples be ordered?" },
+      { "role": "assistant", "expected_answer": "Unsupervised: most similar examples to the right." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 67,
+        "text": "Sample Selection\nWhat are good examples for ICL?\nUnsupervised learning\n- L2 distance/cosine similarity between example and input\nSupervised learning\n- Dense passage retriever\n  - Trained with good task performance\nReinforcement learning\n- Decisions:\n  - Select examples"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 68,
+        "text": "Sample ordering\nUnsupervised:\n- Most similar examples to the right"
+      }
+    ]
+  },
+  {
+    "id": "multi-12-019",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-019-01.wav", "question_text": "What does the SuperGLUE result for ICL look like, and what is Instruction Induction?" },
+      { "role": "assistant", "expected_answer": "SuperGLUE is a set of language understanding tasks. Few examples are enough to get good performance. Instruction Induction is prompt engineering by LLMs." },
+      { "role": "user", "question_audio": "audio/multi-12-019-02.wav", "question_text": "Can you sketch the Instruction Induction setup?" },
+      { "role": "assistant", "expected_answer": "Standard in-context learning gives input-output pairs and lets the LLM continue ('Input: As soon as you can. Output: At your earliest convenience.' ... 'Input: Sorry I messed up. Output: I apologise for my wrongdoings.' then 'Input: I can't stand his temper. Output: I cannot tolerate his temper.'). Instruction Induction wraps the same pairs with the prompt 'I gave a friend an instruction and five inputs. The friend read the instruction and wrote an output for every one of the inputs. Here are the input-output pairs:' and the LLM completes with 'The instruction was translate the inputs into more formal language.'" }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 69,
+        "text": "In context Learning\nSuperGLUE\n- language understanding tasks\nFew example enough to get good performance"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 70,
+        "text": "Instruction Induction\nPrompt engineering by LLMs\nIn-Context Learning\nInput: As soon as you can.\nOutput: At your earliest convenience.\n...\nInput: Sorry I messed up.\nOutput: I apologise for my wrongdoings.\nInput: I can't stand his temper.\nOutput: I cannot tolerate his temper.\nInstruction Induction\nI gave a friend an instruction and five inputs. The friend read the instruction and wrote an output for every one of the inputs. Here are the input-output pairs:\nThe instruction was translate the inputs into more formal language."
+      }
+    ]
+  },
+  {
+    "id": "multi-12-020",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-12-020-01.wav", "question_text": "What motivates Chain of Thought prompting?" },
+      { "role": "assistant", "expected_answer": "Reasoning programs are difficult for LLMs. Examples include Arithmetic Reasoning (AR), e.g. 'If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?'; Symbolic Reasoning (SR), e.g. 'Take the last letters of the words in \"Elon Musk\" and concatenate them'; and Commonsense Reasoning (CR), e.g. 'What home entertainment equipment requires cable? Answer Choices: (a) radio shack (b) substation (c) television (d) cabinet'." },
+      { "role": "user", "question_audio": "audio/multi-12-020-02.wav", "question_text": "Define it and its benefits." },
+      { "role": "assistant", "expected_answer": "A chain of thought is a series of intermediate natural language reasoning steps that lead to the final output. Intuition: use <input, intermediate results, output> triples, rather than simple <input, output> pairs. Benefits: Decomposition into easier intermediate problems, Interpretable, More general than neural symbolic computing, and Leveraging prompting of LLM." }
+    ],
+    "context": [
+      {
+        "file": "12-LLMs.pdf",
+        "page": 72,
+        "text": "Motivation\nReasoning programms are difficult for LLMs\nArithmetic Reasoning (AR)\nQ: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?\nSymbolic Reasoning (SR)\nQ: Take the last letters of the words in \"Elon Musk\" and concatenate them\nCommonsense Reasoning (CR)\nQ: What home entertainment equipment requires cable?\nAnswer Choices: (a) radio shack (b) substation (c) television (d) cabinet"
+      },
+      {
+        "file": "12-LLMs.pdf",
+        "page": 73,
+        "text": "Chain of Thought (COT)\nA chain of thought is a series of intermediate natural language reasoning steps that lead to the final output.\nIntuition\n- use <input, intermediate results, output> triples, rather than simple <input, output> pairs\nBenefits:\n- Decomposition -> easier intermediate problems\n- Interpretable\n- More general than neural symbolic computing\n- Leveraging prompting of LLM"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-001-01.wav", "question_text": "What are the open challenges of using LLMs alone as a knowledge base?" },
+      { "role": "assistant", "expected_answer": "The four open challenges are: Up-to-date information (parameters are only updated at specific times), Private information (models trained only on public data; how to use private data), Hallucinations, and Expandability (how to tell if the answer is correct)." },
+      { "role": "user", "question_audio": "audio/multi-17-001-02.wav", "question_text": "How does retrieval augmented generation address these?" },
+      { "role": "assistant", "expected_answer": "The idea is to add the model the capability to re-access its training data, or external resources: Close-book exam + Information retrieval -> Open-book exam. This introduces two additional challenges: how to retrieve relevant information, and how to integrate information." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 8,
+        "text": "Open Challenge\nUp-to-date information\n- Parameters are only updated a specific times\nPrivate information\n- Models trained only on public data\n- How to use private data\nHallucinations\nExpandability\n- How to tell if the answer is correct"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 9,
+        "text": "Retrival augmented generation\nIdea:\n- Add model the capability to re-access its training data, or external resources\nClose-book exam + Information retrieval -> Open-book exam"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 10,
+        "text": "Retrival augmented generation\nAdditional challenge:\n- How to retrieve relevant information?\n- How to integrate information?"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-002-01.wav", "question_text": "What is KNN-LM, and how does it combine retrieval with the language model?" },
+      { "role": "assistant", "expected_answer": "KNN-LM (Urvashi Khandelwal, 2020) augments a language model with a nearest-neighbor lookup over keys/values (e.g. key 'Obama was born in' -> value 'Hawaii'). At inference, the LM produces P_LM and the retrieval produces P_KNN, and the final distribution is the interpolation (1 - lambda) * P_LM + lambda * P_KNN." },
+      { "role": "user", "question_audio": "audio/multi-17-002-02.wav", "question_text": "Walk me through the inference steps." },
+      { "role": "assistant", "expected_answer": "Given an input like 'Obama's birthplace is ...', the LM produces a hidden representation (e.g. (0.2;0.3;0.2;…;0.7)). For each key in the index we compute a distance (e.g. 4, 5, 100, 3). We take the nearest k (e.g. Hawaii 3, Illinois 4, Hawaii 5), Normalize them (Hawaii 0.7, Illinois 0.2, Hawaii 0.1), Aggregate by value (Hawaii 0.8, Illinois 0.2), and Interpolate with the LM probability (Hawaii 0.2, Illinois 0.2 from LM) to get the final P (Hawaii 0.6, Illinois 0.2)." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 12,
+        "text": "KNN-LM\nInput: Obama's birthplace is …\nLM\n(Urvashi Khandelwal, 2020)"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 14,
+        "text": "KNN-LM\nInput: Obama's birthplace is …\nP_LM\nHawaii 0.2\nIllinois 0.2\n…\n(1 - lambda) P_LM + lambda P_KNN\nP_KNN\nHawaii 0.6\nIllinois 0.2\n…\nKeys | Values\nObama was a senator for | Illinois\nObama was born in | Hawaii\n…"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 19,
+        "text": "KNN-LM Inference\nKeys | Representation | Values | Distance | Nearest k\nObama was a senator for | (0.2;0.5;0.3;…;0.4) | Illinois | 4 | Hawaii 3\nObama was born in | (0.3;0.9;0.1;…;0.1) | Hawaii | 5 | Illinois 4\nBarack is married to | (0.1;0.7;0.2;…;0.5) | Michelle | 100 | Hawaii 5\nObama is a native of | (0.2;0.3;0.2;…;0.7) | Hawaii | 3"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 21,
+        "text": "KNN-LM Inference\nNearest k | Normalization | Aggregation\nHawaii 3 | Hawaii 0.7 | Hawaii 0.8\nIllinois 4 | Illinois 0.2 | Illinois 0.2\nHawaii 5 | Hawaii 0.1\nObama's birthplace is\nLM -> Probability\nHawaii 0.2\nIllinois 0.2\nInterpolated\nHawaii 0.6\nIllinois 0.2"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-003-01.wav", "question_text": "What does the lecture report as KNN-LM's main empirical finding?" },
+      { "role": "assistant", "expected_answer": "Memorization helps generation. On Wikitext-103 (103M tokens), the Base LM has perplexity 18.65 while KNN-LM achieves 16.12. KNN-LM also lets you dynamically add text without training by increasing the data index, and supports domain adaptation by adding domain-specific data." },
+      { "role": "user", "question_audio": "audio/multi-17-003-02.wav", "question_text": "What are KNN-LM's limitations?" },
+      { "role": "assistant", "expected_answer": "High index cost (index size = token number), High inference cost (one retrieval per generation step), and Train-test mismatch." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 22,
+        "text": "KNN – LM Findings\nMemorization helps generation\n- Results on Wikitext-103: 103M tokens\nModel | Perplexity\nBase LM | 18.65\nKNN-LM | 16.12"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 23,
+        "text": "KNN – LM Findings\nMemorization helps generation\nDynamically add text without training\n- Increase data index\nDomain adaptation\n- Add domain-specific data"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 24,
+        "text": "KNN-LM Limitations\nHigh index cost\n- Index size = Token number\nHigh inference cost\n- One retrieval per generation step\nTrain-test mismatch"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-004",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-004-01.wav", "question_text": "What is the motivation behind RAG, and what does its pipeline look like?" },
+      { "role": "assistant", "expected_answer": "Motivation: integration of knowledge from other source, and dynamically retrieve relevant information. The pipeline has three stages: Indexing (M, very large e.g. millions of passages), Retrieval (Question is compared against the index, returning 1 or few - 20 to 100 passages), and Generation (LLM produces the Answer). RAG uses information retrieval to find relevant passages." },
+      { "role": "user", "question_audio": "audio/multi-17-004-02.wav", "question_text": "What does the comparison step actually compute over those passages?" },
+      { "role": "assistant", "expected_answer": "For each indexed item the query is compared via its representation against each Rep_i to produce a Score_i, and the scores are then sorted to return the top documents (Doc 3, Doc 5, Doc 2, ...)." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 26,
+        "text": "Retrival-Augmented Generation (RAG)\nMotivation\n- Integration knowledge from other source\n- Dynamically retrieve relevant information"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 27,
+        "text": "Retrival-Augmented Generation (RAG)\nUse Information retrieval to find relevant passages\nIndexing | Retrieval | Generation\nQuestion -> Compare -> Passage -> LLM -> Answer\n1 or few (20-100)\nM (very large e.g. millions)"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 29,
+        "text": "Information retrieval\nRep. 1, Rep. 2, Rep. 3, Rep. 4, Rep. 5\nRep.\nComparisons -> Score 1, Score 2, Score 3, Score 4, Score 5\nSort -> Doc, Doc, Doc"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-005",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-005-01.wav", "question_text": "What are the challenges in the comparison step of information retrieval?" },
+      { "role": "assistant", "expected_answer": "The two challenges are Representation and Comparsion. How good the query and document fit to each other depends on these." },
+      { "role": "user", "question_audio": "audio/multi-17-005-02.wav", "question_text": "Why use approximate search at all?" },
+      { "role": "assistant", "expected_answer": "With millions of documents we cannot compute all scores. Approximative search is used to locate similar ones fast." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 30,
+        "text": "Comparison\nHow good do the query and document fit to each other?\nChallenges\n- Representation\n- Comparsion"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 31,
+        "text": "Search\nChallenge\n- Million of documents\n- Cannot compute all scores\nApproximative search\n- Locate similar ones fast"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-006",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-006-01.wav", "question_text": "How does the traditional TF-IDF retrieval approach work?" },
+      { "role": "assistant", "expected_answer": "Traditionally, TFIDF is used: we compare TF-IDF vectors of the question and the passage. Term frequency: t_{f,d} = count(t, d), and for large numbers difference is less important: t_{f,d} = log_{10}(count(t, d) + 1). Inverse document frequency: idf_{t,d} = log_{10}(N / df_t)." },
+      { "role": "user", "question_audio": "audio/multi-17-006-02.wav", "question_text": "Why is IDF needed on top of TF?" },
+      { "role": "assistant", "expected_answer": "Words occurring in less documents are useful for discrimination. Example: idf_{the,d} = log_{10}(N/df_the) = log_{10}(N/N) = 0; idf_{AI4LT,d} = log_{10}(N/df_AI4LT) = log_{10}(N/1)." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 33,
+        "text": "Retrieval\nUse Information retrieval to find relevant passages\nTraditionally\n- TFIDF\n- Compare TF-IDF vectors of Question and Passage"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 35,
+        "text": "Term frequency – inverse document frequency\nMotivation:\n- Word occurring many times in the document is more important for the document\n  - t_{f,d} = count(t, d)\n- For large number difference less important\n  - t_{f,d} = log_{10}(count(t, d) + 1)"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 36,
+        "text": "Term frequency – inverse document frequency\nMotivation:\n- Words occurring in less documents useful for discrimination\n  - idf_{t,d} = log_{10}(N / df_t)\nExample:\n- idf_{the,d} = log_{10}(N/df_the) = log_{10}(N/N) = 0\n- idf_{AI4LT,d} = log_{10}(N/df_AI4LT) = log_{10}(N/1)"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-007",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-007-01.wav", "question_text": "When TF-IDF treats all features as equally important, what problem arises?" },
+      { "role": "assistant", "expected_answer": "All features are equally important; we either learn feature weights (challenge: supervised learning) or use word importance. Example: sim(q, d) = cos(q, d) = (w x q) * d / (|q| * |d|). Query Karlsruhe (0.4), Niehues (0.8); Document 1 'Karlsruhe City BW'; Document 2 'Niehues Jan Informatik' get the same similarity." },
+      { "role": "user", "question_audio": "audio/multi-17-007-02.wav", "question_text": "How do deep learning based retrievers improve over this?" },
+      { "role": "assistant", "expected_answer": "Deep learning-based approaches compare embedding of passage and question, with the Dense Passage Retriever (DPR) as the representative method." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 34,
+        "text": "Feature importance\nUnsupervised\n- No annotated data\n  - (query,document) -> Ranking\nAll features equally important\n- Learn feature weights\n  - Challenge:\n    - Supervised learning\n- Use word importance\nExample\n- sim(q, d) = cos(q, d) = (w x q) * d / (|q| * |d|)\n- Query\n  - Karlsruhe(0.4) Niehues (0.8)\n- Document 1\n  - Karlsruhe City BW\n- Document 2\n  - Niehues Jan Informatik\nSame similarity"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 37,
+        "text": "Retrieval\nUse Information retrieval to find relevant passages\nTraditionally\n- TFIDF\n- Compare TF-IDF vectors of Question and Passage\nDeep learning-based approaches:\n- Compare embedding of passage and question\n- Dense passage Retriever (DPR)"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-008",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-008-01.wav", "question_text": "What are the main challenges in training a dense passage retriever?" },
+      { "role": "assistant", "expected_answer": "Two challenges: compare question to many passages (must be fast), and training of embeddings (how to generate negative samples)." },
+      { "role": "user", "question_audio": "audio/multi-17-008-02.wav", "question_text": "What negative example strategies are used?" },
+      { "role": "assistant", "expected_answer": "Random, Best passages by BM25, and Gold (relevant passages from other examples; advantage: each passage is positive and negative). The best combination is Gold passages from the same batch plus one BM25." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 38,
+        "text": "Dense passage retriever\nChallenges:\n- Compare question to many passage\n  - Fast\n- Training of embeddings\n  - How to generate negative samples"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 42,
+        "text": "Dense passage retriever - Training\nPositive examples:\n- Training examples\nNegative examples:\n- Random\n- Best passages by BM25\n- Gold\n  - Relevant passages from other examples\n  - Advantages:\n    - Each passage is positive and negative\nBest:\n- Gold passages from same batch\n- One BM25"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-009",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-009-01.wav", "question_text": "How does DPR compare a question against passages?" },
+      { "role": "assistant", "expected_answer": "The passage encoder cannot be recalculated, so passage embeddings are precomputed. A question encoder embeds the question. Comparison uses Euclidian distance, with fast algorithms for finding nearest neighbors." },
+      { "role": "user", "question_audio": "audio/multi-17-009-02.wav", "question_text": "What is used as the encoder?" },
+      { "role": "assistant", "expected_answer": "BERT representation, taking the CLS token with D=768." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 39,
+        "text": "Dense passage retriever - Comparison\nPassage encoder:\n- Cannot be recalculated\nQuestion encoder\nCompare using Euclidian distance\n- Fast algorithms for finding nearest neighbors"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 40,
+        "text": "Dense passage retriever - Encoder\nBERT representation\nCLS token\n- D=768"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-010",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-010-01.wav", "question_text": "Why is the DPR training set up as metric learning?" },
+      { "role": "assistant", "expected_answer": "Motivation: relevant pairs should be next to each other. Metric learning ensures relevant pairs are next to each other and irrelevant ones are far from each other. The data is q_i, p_i^+, p_{i,1}^-, ..., p_{i,n}^-." },
+      { "role": "user", "question_audio": "audio/multi-17-010-02.wav", "question_text": "What is the training loss?" },
+      { "role": "assistant", "expected_answer": "L(q_i, p_i^+, p_{i,1}^-, ..., p_{i,n}^-) = -log(e^{sim(q_i, p_i^+)} / (e^{sim(q_i, p_i^+)} + sum_{j=1}^n e^{sim(q_i, p_{i,j}^-)}))." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 41,
+        "text": "Dense passage retriever - Training\nMotivation:\n- Relevant pairs should be next to each other\nMetric learning\n- Relevant pairs next to each other\n- Irrelevant far form each other\nMetric learning\nData\n- q_i, p_i^+, p_{i,1}^-, ..., p_{i,n}^-\nL(q_i, p_i^+, p_{i,1}^-, ..., p_{i,n}^-) = -log(e^{sim(q_i, p_i^+)} / (e^{sim(q_i, p_i^+)} + sum_{j=1}^n e^{sim(q_i, p_{i,j}^-)}))."
+      }
+    ]
+  },
+  {
+    "id": "multi-17-011",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-011-01.wav", "question_text": "What is the challenge of DPR's bi-encoder design, and how does a cross-encoder address it?" },
+      { "role": "assistant", "expected_answer": "The challenge of DPR is independent processing of query and document (bi-encoder). The cross-encoder idea is joint encoding of both. Challenge: no nearest neighbour lookup is possible. Application: reranking of a small number of candidates." },
+      { "role": "user", "question_audio": "audio/multi-17-011-02.wav", "question_text": "What does the Late Interaction approach do differently?" },
+      { "role": "assistant", "expected_answer": "Late Interaction processes the query and document independently in the initial layers (fast processing) and then jointly processes them in the last layer (more effective)." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 43,
+        "text": "Reranking\nChallenge of DPR\n- Independent processing of query and document\nBi-encoder"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 44,
+        "text": "Reranking\nChallenge of DPR\n- Independent processing of query and document\nIdea\n- Joint encoding of both\n- Challenge\n  - No nearest neighbour lookup possible\n- Application\n  - Reranking of small number of candidates\nCross-encoder"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 45,
+        "text": "Late Interaction\nInitial processing of query and document Independent\n- Fast processing\nJointly process in last layer\n- More effective"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-012",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-012-01.wav", "question_text": "How does traditional indexing differ from deep-learning-based indexing in RAG?" },
+      { "role": "assistant", "expected_answer": "Traditionally an Inverted Index is used: input is a term, output is the list of documents containing the term. Deep Learning based indexing uses a database of embeddings, with fast retrieval via a nearest neighbor source." },
+      { "role": "user", "question_audio": "audio/multi-17-012-02.wav", "question_text": "What enables fast nearest neighbor lookup?" },
+      { "role": "assistant", "expected_answer": "Locality sensitive hashing. Software: FAISS. It partitions the continuous space and is used like an inverted index." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 47,
+        "text": "Indexing\nTraditionally\n- Inverted Index\n  - Input:\n    - Term\n  - Output:\n    - List of documents containing term"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 48,
+        "text": "Indexing\nTraditionally\nDeep Learning based\n- Database of embeddings\n- Fast retrieval\n  - Nearest neighbor source"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 49,
+        "text": "Indexing\nLocality sensitive hashing\n- Software: FAISS\n- partitions in continuous space\n  - use like inverted index"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-013",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-013-01.wav", "question_text": "What is done offline and what online during dense passage retrieval inference?" },
+      { "role": "assistant", "expected_answer": "Offline: precalculated passage embeddings, indexed using FAISS (a library for similarity search and clustering). Online: calculate question embedding, and retrieve top k passages." },
+      { "role": "user", "question_audio": "audio/multi-17-013-02.wav", "question_text": "What's the granularity challenge in indexing?" },
+      { "role": "assistant", "expected_answer": "Whether to index single sentences vs blocks." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 50,
+        "text": "Dense passage retriever - Inference\nOffline:\n- Precalculated Passage embeddings\n- Index using FAISS\n  - Library for similarity search and clustering\nOnline\n- Calculate question embedding\n- Retrieve top k passages"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 51,
+        "text": "Indexing\nChallenges:\n- Granularity\n  - Single sentence vs blocks"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-014",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-014-01.wav", "question_text": "What is the goal of pre-retrieval, and what techniques does the lecture list?" },
+      { "role": "assistant", "expected_answer": "The goal is to find better matching content. Techniques: Query Routing, and Query rewriting / Query expansion." },
+      { "role": "user", "question_audio": "audio/multi-17-014-02.wav", "question_text": "Detail those two techniques." },
+      { "role": "assistant", "expected_answer": "Query routing: situation - several data stores; approach - alternate or merge different results. Query expansion: goal - aligning the semantics of a query and a document; approach - use LLM to generate document (as in HyDE)." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 54,
+        "text": "Pre-retrieval\nGoal\n- Find better matching content\nTechniques\n- Query Routing\nQuery routing\n- Situation\n  - Several data stores\n- Approach\n  - Alternate or merge different results"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 55,
+        "text": "Pre-retrieval\nGoal\n- Find better matching content\nTechniques\n- Query Routing\n- Query rewriting/Query expansion\nQuery expansion\nGoal\n- Aligning the semantics of a query and a document\nApproach\n- Use LLM to generate document"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-015",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-015-01.wav", "question_text": "What motivates post-retrieval processing?" },
+      { "role": "assistant", "expected_answer": "The motivation is to merge with the query and to address challenges posed by context window limits." },
+      { "role": "user", "question_audio": "audio/multi-17-015-02.wav", "question_text": "What post-retrieval techniques are used?" },
+      { "role": "assistant", "expected_answer": "Re-Ranking: re-ranking the retrieved information to relocate the most relevant content. Prompt Compression: compressing irrelevant context, highlighting pivotal paragraphs, and reducing the overall context length." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 56,
+        "text": "Post-retrieval\nMotivation\n- merge with the query\n- addressing challenges posed by context window limits\nTechniques:\n- Re-Ranking\n  - Re-ranking the retrieved information to relocate the most relevant content\n- Prompt Compression\n  - compressing irrelevant context\n  - highlighting pivotal paragraphs\n  - reducing the overall context length."
+      }
+    ]
+  },
+  {
+    "id": "multi-17-016",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-016-01.wav", "question_text": "What applications does the generation step support, and how are retriever and reader combined in the simplest case?" },
+      { "role": "assistant", "expected_answer": "Applications: zero-shot QA, and finetune (learn how to integrate retrieved documents). Simple combination chains retriever and reader: read input as a combination of question and passages." },
+      { "role": "user", "question_audio": "audio/multi-17-016-02.wav", "question_text": "What does end-to-end training look like?" },
+      { "role": "assistant", "expected_answer": "Train the retriever and reader to improve accuracy. Reader: maximize generation likelihood given a single retrieved document. Retriever: maximize overall likelihood by optimizing mixture weights over documents." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 58,
+        "text": "Generation\nApplications\n- Zero-shot QA\n- Finetune\n  - Learn how to integrate retrieved documents"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 59,
+        "text": "Chaining\nSimple combination\n- Chain retriever and reader\n- Read input\n  - Combination of question and passages"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 60,
+        "text": "End-to-End training\nTrain the retriever and reader to improve accuracy\nReader:\n- Maximize generation likelihood given single retrieved document\nRetriever\n- Maximize overall likelihood by optimizing mixture weights over documents"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-017",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-017-01.wav", "question_text": "When in generation does retrieval happen?" },
+      { "role": "assistant", "expected_answer": "Three options: at the beginning (default method, fast); dynamically (generate search token as in Schick et al, 2023; based on uncertainty as in Jiang et al, 2023); or every token." },
+      { "role": "user", "question_audio": "audio/multi-17-017-02.wav", "question_text": "Tell me more about the Toolformer-style dynamic retrieval." },
+      { "role": "assistant", "expected_answer": "Toolformer (Schick et al. 2023) generates tokens that trigger retrieval (or other tools). Linearize as in the example with Name of tool, Parameters, and Answer. Training is done in an iterative manner: generate and identify successful retrievals. Concretely: sample API class based on API name (max of k positions); execute APIs; filter (if probability of next tokens is higher with API results, keep it)." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 62,
+        "text": "When do we Retrieve?\nAt the beginning\n- Default method\n- Fast\nDynamically\n- Generate search token (Schick et al, 2023)\n- Based on uncertainty (Jiang et al, 2023)\nEvery token"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 63,
+        "text": "Dynamic retrieval\nToolformer (Schick et al. 2023)\n- generates tokens that trigger retrieval (or other tools)\n- Linearize as in the example\n  - Name of tool\n  - Parameters\n  - Answer\nTraining is done in an iterative manner - generate and identify successful retrievals"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 64,
+        "text": "Dynamic retrieval\nSample API class based on API name\n- Max of k positions\nExecute APIs\nFilter\n- If probability of next tokens is higher with API results, keep it"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-018",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-018-01.wav", "question_text": "How does FLARE decide when to retrieve?" },
+      { "role": "assistant", "expected_answer": "FLARE (Jiang et al. 2023) tries to generate content, then does retrieval if LM certainty is low. The rule: y_t = s_hat_t if all tokens of s_hat_t have probabilities >= theta, else s_t = LM([D_q, x, y_t])." },
+      { "role": "user", "question_audio": "audio/multi-17-018-02.wav", "question_text": "Can you give a concrete example of FLARE's iteration?" },
+      { "role": "assistant", "expected_answer": "Input: 'Generate a summary about Joe Biden.' Step 1: s_hat_1 'Joe Biden (born November 20, 1942) is the 46th president of the United States.' is accepted as s_1. Step 2: s_hat_2 'Joe Biden attended the University of Pennsylvania, where he earned a law degree.' has low certainty, so retrieval q_2 is triggered and s_2 becomes 'He graduated from the University of Delaware in 1965 with a Bachelor of Arts in history and political science.' Step 3 similarly corrects the announcement date from 'August 18, 2019' to 'April 25, 2019'." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 65,
+        "text": "Dynamic retrieval\nFLARE (Jiang et al. 2023) tries to generate content, then does retrieval if LM certainty is low\ny_t = s_hat_t if all tokens of s_hat_t have probs >= theta\ns_t = LM([D_q, x, y_t]) otherwise\nInput x: Generate a summary about Joe Biden.\nStep 1 s_hat_1: Joe Biden (born November 20, 1942) is the 46th president of the United States.\ns_1: Joe Biden (born November 20, 1942) is the 46th president of the United States.\nStep 2 s_hat_2: Joe Biden attended the University of Pennsylvania, where he earned a law degree.\ns_2: He graduated from the University of Delaware in 1965 with a Bachelor of Arts in history and political science.\nStep 3 s_hat_3: Joe Biden announced his candidacy for the 2020 presidential election on August 18, 2019.\ns_3: Joe Biden announced his candidacy for the 2020 presidential election on April 25, 2019."
+      }
+    ]
+  },
+  {
+    "id": "multi-17-019",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-019-01.wav", "question_text": "Why does traditional question answering use a document collection rather than the language model parameters?" },
+      { "role": "assistant", "expected_answer": "In traditional question answering, information is stored in the document collection. The pipeline goes from User Question -> Question Analysis -> Candidate Document Selection (over a preprocessed document collection) -> Candidate Document Analysis -> Answer Extraction -> Response Generation, with a User Model and Dialogue Context supporting clarification requests." },
+      { "role": "user", "question_audio": "audio/multi-17-019-02.wav", "question_text": "And how is the LLM-based approach different?" },
+      { "role": "assistant", "expected_answer": "In LLM-based question answering, information is stored in the model parameters. For example, asking 'What are is the most famous person born in Karlsruhe?' the model produces an answer from its parameters (e.g. 'One of the most famous people born in Karlsruhe, Germany is Karl Benz...')." }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 4,
+        "text": "Traditional Question Answering\nUSER\nQuestion -> Question Analysis -> QRep1 -> Candidate Document Selection -> Candidate Documents -> Candidate Document Analysis -> Analysed Documents -> Answer Extraction -> Ranked Answers -> Response Generation -> Response\nClarification Request\nUser Model\nDialogue Context\nDocument Collection -> Document Collection Preprocessing -> Preprocessed Documents\nInformation stored in document collection"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 5,
+        "text": "LLM-based Question answering\nWhat are is the most famous person born in Karlsruhe?\nOne of the most famous people born in Karlsruhe, Germany is Karl Benz. Karl Benz, born on November 25, 1844, in Karlsruhe, was an engineer and inventor who is credited with developing the first practical automobile powered by an internal combustion engine. In 1886, he patented his Benz Patent-Motorwagen, which is considered the world's first automobile. Karl Benz's contributions to the automotive industry laid the foundation for the modern automobile and revolutionized transportation. His legacy as an automotive pioneer and inventor continues to be celebrated today.\nInformation stored in the model parameters"
+      }
+    ]
+  },
+  {
+    "id": "multi-17-020",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-17-020-01.wav", "question_text": "How are LLMs used as a knowledge base in the prompt setup?" },
+      { "role": "assistant", "expected_answer": "LLMs as knowledge base: the prompt is the question. Example: Question 'What was the city of Beijing previously known as?' produces Answer 'Peking'." },
+      { "role": "user", "question_audio": "audio/multi-17-020-02.wav", "question_text": "Show me a worked example of a question-answer task with text passage in QA." },
+      { "role": "assistant", "expected_answer": "Example: 'name the first private citizen to fly in space'. Answer type: person. Text passage: 'Among them was Christa McAuliffe, the first private citizen to fly in space, Karen Allen, best known for her starring role in \"Raiders of the lost Ark\", plays McAuliffe. Brian Kerwin is featured as shuttle pilot Mike Smith...'" }
+    ],
+    "context": [
+      {
+        "file": "17-RAG.pdf",
+        "page": 7,
+        "text": "Large Language Models\nLLMs as knowledge base\n- Prompt\n  - Question\n- Example:\n  - Question: What was the city of Beijing previously known as?\n  - Answer: Peking"
+      },
+      {
+        "file": "17-RAG.pdf",
+        "page": 3,
+        "text": "Question Answering\nExample\n- name the first private citizen to fly in space\nAnswer type\n- person\nText passage\n- Among them was Christa McAuliffe, the first private citizen to fly in space, Karen Allen, best known for her starring role in \"Raiders of the lost Ark\", plays McAuliffe. Brian Kerwin is featured as shuttle pilot Mike Smith..."
+      }
+    ]
+  },
+  {
+    "id": "multi-20-001",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-001-01.wav", "question_text": "Why is ASR a useful capability, and what does it do?" },
+      { "role": "assistant", "expected_answer": "Speech is the most natural way to communicate (in several languages the only one), preferable in several situations such as hands free, and fast. ASR recognizes spoken language and transcripts: input is an audio stream and output is written text. Applications: Transcription (Stand alone), Personal assistant, Speech translation." },
+      { "role": "user", "question_audio": "audio/multi-20-001-02.wav", "question_text": "What are the inputs and outputs in the lecture's formal ASR setup?" },
+      { "role": "assistant", "expected_answer": "Input: audio frames (e.g. 1 feature per 20ms), X = X_1, ..., X_M. Output: phones/letters/words, Y = Y_1, ..., Y_N." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 3,
+        "text": "Motivation\nMost natural way to communicate\n- In several languages the only one\nPreferable in several situations\n- Hands free\nFast"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 4,
+        "text": "Automatic Speech Recognition\nRecognize spoken language and transcript\n- Input: Audio stream\n- Output: Written text\nApplications:\n- Transcription (Stand alone)\n- Personal assistant\n- Speech translation"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 39,
+        "text": "Automatic Speech Recognition\nInput:\n- Audio frames (e.g. 1 feature per 20ms)\n- X = X_1, ..., X_M\nOutput\n- Phones/Letters/Words\n- Y = Y_1, ..., Y_N"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-002",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-002-01.wav", "question_text": "Describe the speech production system." },
+      { "role": "assistant", "expected_answer": "Lungs are the main source of energy. Larynx is the main source of sound. The path goes through PHARYNX, then either VELUM/NASAL CAVITY (nasal sound) or ORAL CAVITY -> TONGUE (main source of articulation) / LIPS (oral sound) / PASSIVE ARTICULATORS." },
+      { "role": "user", "question_audio": "audio/multi-20-002-02.wav", "question_text": "How is the excitation spectrum different from the speech spectrum?" },
+      { "role": "assistant", "expected_answer": "The excitation spectrum is produced by the voice source (fundamental frequency Fx plus harmonics). The speech spectrum overlays a smoothed spectrum envelope on top, with formants F1, F2, F3, F4 (resonances), and harmonics 'illuminate' the spectral shape of the vocal tract." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 6,
+        "text": "Speech Production\nLUNGS - Main source of energy\nLARYNX - Main source of sound\nPHARYNX\nVELUM - NASAL CAVITY - Nasal Sound\nORAL CAVITY\nTONGUE - Main source of articulation\nLIPS - Oral Sound\nPASSIVE ARTICULATORS"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 7,
+        "text": "Speech Production\nExcitation Spectrum\n- Produced by voice source\nFundamental frequency (Fx)\nHarmonics"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 8,
+        "text": "Speech Spectrum\nFORMANTS (resonances)\nF1, F2, F3, F4\nSmoothed spectrum envelope\nHarmonics 'illuminate' spectral shape of vocal tract"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-003",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-003-01.wav", "question_text": "How does human hearing work?" },
+      { "role": "assistant", "expected_answer": "Sound waves vibrate the ear drum, cause fluid in the cochlea to vibrate, the spiral cochlea has hairs inside that vibrate, different frequencies vibrate different hairs, and this converts the time domain to the frequency domain." },
+      { "role": "user", "question_audio": "audio/multi-20-003-02.wav", "question_text": "And how do phones differ from phonemes?" },
+      { "role": "assistant", "expected_answer": "Phones are basic speech sounds (around 200-300). Phonemes are defined as fundamental units of speech: if you change it, it (can) change the meaning. Phonemes are language dependent." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 9,
+        "text": "Hearing\nSound waves\n- Vibrate ear drum\n- Cause fluid in cochlea to vibrate\n- Spiral cochlea\n  - Vibrate hairs inside cochlea\n  - Different frequencies vibrate different hairs\n  - Converts time domain to frequency domain"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 10,
+        "text": "Phones / Phonemes\nPhones:\n- Basic speech sounds (around 200-300)\nPhonemes:\n- Defined as fundamental units of speech\n- If you change it, it (can) change the meaning\n- Language dependent\nVowels\n- sound segments produced using an unobstructed configuration of the vocal tract\nConsonants:\n- sound segments in which the airflow is at least partly obstructed"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-004",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-004-01.wav", "question_text": "What is the difference between vowels and consonants?" },
+      { "role": "assistant", "expected_answer": "Vowels are sound segments produced using an unobstructed configuration of the vocal tract. Consonants are sound segments in which the airflow is at least partly obstructed." },
+      { "role": "user", "question_audio": "audio/multi-20-004-02.wav", "question_text": "How does ASR process speech into features?" },
+      { "role": "assistant", "expected_answer": "Speech processing represents audio as features, either via signal processing (MFCC) or via deep learning (Wav2Vec 2.0)." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 10,
+        "text": "Phones / Phonemes\nVowels\n- sound segments produced using an unobstructed configuration of the vocal tract\nConsonants:\n- sound segments in which the airflow is at least partly obstructed"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 12,
+        "text": "Speech Processing\nRepresent audio as features\nSignal processing\n- MFCC\nDeep Learning\n- Wav2Vec 2.0"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-005",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-005-01.wav", "question_text": "What sampling rates does the lecture use, and how is windowing parameterized?" },
+      { "role": "assistant", "expected_answer": "Sampling measures amplitude of signal at time t. 16,000 Hz (samples/sec) Microphone is wideband; 8,000 Hz is Telephone. Frame size: typically 20-25ms. Frame shift: 5-10ms." },
+      { "role": "user", "question_audio": "audio/multi-20-005-02.wav", "question_text": "Why divide speech into successive overlapping frames?" },
+      { "role": "assistant", "expected_answer": "Because speech is not a stationary signal; we want information about a small enough region that the spectral information is a useful cue." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 14,
+        "text": "Speech Processing\nSampling:\n- measuring amplitude of signal at time t\n- 16,000 Hz (samples/sec) Microphone (\"Wideband\"):\n- 8,000 Hz (samples/sec) Telephone"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 17,
+        "text": "Windowing\nWhy divide speech signal into successive overlapping frames?\n- Speech is not a stationary signal; we want information about a small enough region that the spectral information is a useful cue.\nFrames\n- Frame size: typically, 20-25ms\n- Frame shift: the length of time between successive frames, typically, 5-10ms"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-006",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-006-01.wav", "question_text": "What's the role of the Discrete Fourier Transform in MFCC?" },
+      { "role": "assistant", "expected_answer": "DFT input: windowed signal x[n]...x[m]. Output: for each of N discrete frequency bands, a complex number X[k] representing magnitude and phase of that frequency component in the original signal. The formula is X[k] = sum_{n=0}^{N-1} x[n] * e^{-j 2 pi/N * k n}." },
+      { "role": "user", "question_audio": "audio/multi-20-006-02.wav", "question_text": "Why use the mel-scale?" },
+      { "role": "assistant", "expected_answer": "Human hearing is not equally sensitive to all frequency bands, and is less sensitive at higher frequencies, roughly > 1000 Hz; human perception of frequency is non-linear." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 20,
+        "text": "Discrete Fourier Transform\nInput:\n- Windowed signal x[n]...x[m]\nOutput:\n- For each of N discrete frequency bands\n- A complex number X[k] representing magnitude and phase of that frequency component in the original signal\nDiscrete Fourier Transform (DFT)\nX[k] = sum_{n=0}^{N-1} x[n] e^{-j 2pi/N kn}"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 22,
+        "text": "Mel-scale\nHuman hearing is not equally sensitive to all frequency bands\nLess sensitive at higher frequencies, roughly > 1000 Hz\nI.e. human perception of frequency is non-linear:"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-007",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-007-01.wav", "question_text": "Give the mel-scale definition and its behavior across frequencies." },
+      { "role": "assistant", "expected_answer": "The Mel-scale is a perceptual scale of pitches judged by listeners to be equal in distance from one another. It mimics the non-linear human ear perception of sound: approximately linear below 1 kHz and logarithmic above 1 kHz, more discriminative at lower frequencies and less discriminative at higher frequencies. Definition: Mel(f) = 2595 log_{10}(1 + f/700)." },
+      { "role": "user", "question_audio": "audio/multi-20-007-02.wav", "question_text": "How is the mel filter bank spaced and applied?" },
+      { "role": "assistant", "expected_answer": "The Mel Filter bank is uniformly spaced before 1 kHz and uses a logarithmic scale after 1 kHz. The bank of filters is applied according to the Mel scale to the spectrum, and each filter output is the sum of its filtered spectral components." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 23,
+        "text": "Mel-scale\nMel-scale is a perceptual scale of pitches judged by listeners to be equal in distance from one another.\nMimic the non-linear human ear perception of sound\n- approximately linear below 1 kHz and logarithmic above 1 kHz\n- more discriminative at lower frequencies and less discriminative at higher frequencies.\nDefinition:\nMel(f) = 2595 log_{10}(1 + f/700)"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 24,
+        "text": "Mel Filter Bank Processing\nMel Filter bank\n- Uniformly spaced before 1 kHz\n- logarithmic scale after 1 kHz"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 25,
+        "text": "Mel-filter Bank Processing\nApply the bank of filters according Mel scale to the spectrum\nEach filter output is the sum of its filtered spectral components"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-008",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-008-01.wav", "question_text": "Why are dynamic cepstral coefficients added on top of MFCCs?" },
+      { "role": "assistant", "expected_answer": "Because the cepstral coefficients do not capture energy, and the speech signal is not constant (slope of formants, change from stop burst to release). Goal: add the changes in features (the slopes)." },
+      { "role": "user", "question_audio": "audio/multi-20-008-02.wav", "question_text": "What gets added to the feature vector?" },
+      { "role": "assistant", "expected_answer": "Energy = sum_{t=t_1}^{t_2} x^2[t], plus delta features, plus double-delta acceleration features." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 27,
+        "text": "Dynamic Cepstral Coefficient\nThe cepstral coefficients do not capture energy\nAdd an energy feature\nEnergy = sum_{t=t_1}^{t_2} x^2[t]\nSpeech signal is not constant (slope of formants, change from stop burst to release).\nGoal: add the changes in features (the slopes).\ndelta features\ndouble-delta acceleration features"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-009",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-009-01.wav", "question_text": "What are the four key properties of Wav2Vec 2.0?" },
+      { "role": "assistant", "expected_answer": "Wav2Vec 2.0 processes speech as a hidden representation, is Transformer-based, is self-supervised, and is trained on large amounts of unlabeled audio using raw audio (windowing and sampling)." },
+      { "role": "user", "question_audio": "audio/multi-20-009-02.wav", "question_text": "What are the three architectural pieces of Wav2Vec 2.0?" },
+      { "role": "assistant", "expected_answer": "Feature encoder: a Convolution layer. Contextual representation: a Transformer architecture with relative positional information. Quantization: find a quantized representation for each time step." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 30,
+        "text": "Deep Learning\nProcess speech as hidden representation\nWav2Vec 2.0\nTransformer-based\nSelf-supervised\nTrain model on large amount of unlabeled audio\n- Use raw audio (Windowing and sampling)"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 31,
+        "text": "Wav2Vec 2.0\nArchitecture:\nFeature encoder:\n- Convolution layer\nContextual representation:\n- Transformer architecture with relative positional information\nQuantization:\n- Find quantized representation for each time step"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-010",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-010-01.wav", "question_text": "What are the encoder, masking, quantization and losses used in Wav2Vec?" },
+      { "role": "assistant", "expected_answer": "Encoder: Feature encoder + Context encoder. Mask intermediate representation. Quantization: Codebook. Losses: Diversity loss and Contrastive loss." },
+      { "role": "user", "question_audio": "audio/multi-20-010-02.wav", "question_text": "Any details on the feature encoder?" },
+      { "role": "assistant", "expected_answer": "The Wav2vec 2.0 Latent Feature Encoder takes audio waveform with waveform normalization (zero mean and unit variance), then 7 convolution blocks each with 1D Convolution, Layer Normalization, GELU Activation, producing 512-dim latent feature vectors." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 35,
+        "text": "Wav2Vec\nEncoder\n- Feature encoder\n- Context encoder\nMask intermediate representation\nQuantization\n- Codebook\nLoss\n- Diversity loss\n- Contrastive loss"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 32,
+        "text": "Feature Encoder\nWav2vec 2.0 Latent Feature Encoder\nLatent feature vectors (512-dim)\nGELU Activation\nLayer Normalization\n1D Convolution\nx 7 convolution blocks\nWaveform Normalization (zero mean and unit variance)"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-011",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-011-01.wav", "question_text": "What does the traditional ASR system pipeline look like?" },
+      { "role": "assistant", "expected_answer": "Speech Waveform -> Feature Extraction -> Feature Vectors -> DNN -> PDF Posteriors -> Decoding -> n-best Hypothesis. PDF Labels come from HMM/GMM into DNN training. The WFST combines four components." },
+      { "role": "user", "question_audio": "audio/multi-20-011-02.wav", "question_text": "What are the four WFST components?" },
+      { "role": "assistant", "expected_answer": "H: HMM/GMM. C: Clustering Tree. L: Pronunciation Dictionary. G: Language Model." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 37,
+        "text": "Traditional ASR systems\nWFST\nH HMM/GMM\nC Clustering Tree\nL Pronunciation Dictionary\nG Language Model\nSpeech Waveform -> Feature Extraction -> Feature Vectors -> DNN -> PDF Posteriors -> Decoding -> n-best Hypothesis\nPDF Labels from HMM/GMM to DNN"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-012",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-012-01.wav", "question_text": "What are the two problems that ASR has to solve?" },
+      { "role": "assistant", "expected_answer": "Training: how to assign probability P(Y|X). Inference: how to find the most probable label sequence, y* = argmax_Y p(Y|X)." },
+      { "role": "user", "question_audio": "audio/multi-20-012-02.wav", "question_text": "And what is the alignment idea, with its restrictions?" },
+      { "role": "assistant", "expected_answer": "Idea: align audio to text. Restrictions: monotone, and 1-n alignments (text is shorter than audio)." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 40,
+        "text": "Problems\nTraining\n- How to assign probability P(Y|X)\nInference\n- How to find most probable label sequence\n- y* = argmax_Y p(Y|X)"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 41,
+        "text": "Alignment\nIdea:\n- Align audio to text\nRestrictions\n- Monotone\n- 1-n alignments\n  - Text is shorter than audio"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-013",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-013-01.wav", "question_text": "What's a naïve alignment technique, and what challenges does it face?" },
+      { "role": "assistant", "expected_answer": "The naïve technique repeats characters several times to match the audio. Challenges: audio that does not contain speech, and repeated characters (example: 'h e l l o')." },
+      { "role": "user", "question_audio": "audio/multi-20-013-02.wav", "question_text": "How does CTC alignment solve these?" },
+      { "role": "assistant", "expected_answer": "CTC introduces a blank token that does not correspond to a character and is removed from the output. Algorithm: merge repeated characters then remove blank. Repeated tokens need to have a blank in-between." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 43,
+        "text": "Alignment\nIdea:\n- Align audio to text\nRestrictions\n- Monotone\n- 1-n alignments\n  - Text is shorter than audio\nTechnique\n- Repeat characters several times\n  - Challenges\n    - Audio that does not contain speech\n    - Repeated characters\n      - Example h e l l o"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 45,
+        "text": "CTC Alignment\nIdea\nIntroduce blank token\n- Does not corresponded to character\n- Remove from output\nAlgorithm\n- Merge Repeated characters\n- Remove blank\nRepeated token\n- Need to have blank in-between"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-014",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-014-01.wav", "question_text": "Why can the same audio and text have different alignments under CTC?" },
+      { "role": "assistant", "expected_answer": "Same audio and text can have different alignments. Valid alignments for output 'cat' (with epsilon as blank): 'ε c c ε a t', 'c c a a t t', 'c a ε ε ε t'. Invalid alignments include 'c ε c ε a t' (corresponds to Y=[c, c, a, t]), 'c c a a t' (has length 5), 'c ε ε ε t t' (missing the 'a')." },
+      { "role": "user", "question_audio": "audio/multi-20-014-02.wav", "question_text": "How does the lecture handle the absence of a single alignment in training?" },
+      { "role": "assistant", "expected_answer": "Challenge: no alignment given. Approach: marginalize over the set of valid alignments. p(Y|X) = sum_{L in A_{X,Y}} P(L|X). Example: input x1, x2; output Y=a; label sequences aa, εa, aε give p(a|X) = P(aa|X) + P(εa|X) + P(aε|X)." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 46,
+        "text": "Possible alignment\nSame audio and text can have different alignments\nValid Alignments\nε c c ε a t\nc c a a t t\nc a ε ε ε t\nInvalid Alignments\nc ε c ε a t corresponds to Y = [c, c, a, t]\nc c a a t has length 5\nc ε ε ε t t missing the 'a'"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 47,
+        "text": "Alignment\nChallenge\n- No alignment given\nApproach\n- Marginalize over set of valid alignment\n- p(Y|X) = sum_{L in A_{X,Y}} P(L|X)\nExample\n- Input x1, x2\n- Output Y=a\nLabel sequences\n- aa, εa, aε\np(a|X) = P(aa|X) + P(εa|X) + P(aε|X)"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-015",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-015-01.wav", "question_text": "How many alignments are there in the unrestricted case, and what assumption does sequence labelling make?" },
+      { "role": "assistant", "expected_answer": "Without restrictions, at each of M positions there are N possibilities, giving O(N^M) alignments. Sequence labelling makes the independence assumption: a label does not depend on other labels, so P(A|X) = product_{i=1}^M P(a_i|X). We use dynamic programming." },
+      { "role": "user", "question_audio": "audio/multi-20-015-02.wav", "question_text": "Sketch the dynamic programming forward variable." },
+      { "role": "assistant", "expected_answer": "alpha_t(j) = sum_{x_{1..t}; map(x_{1..t}) = y_{1..j}} P(l_{1..t} | x_{1..t}) is the probability of all sequences of length t that map to the sequence Y_1, ..., Y_j." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 50,
+        "text": "Number of alignments\nHow many alignments between\n- X = X_1, ..., X_M\n- Y = Y_1, ..., Y_N\nSimplification\n- No Epsilons\nWithout restrictions\n- At each position\n  - N possibilities\nO(N^M)"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 53,
+        "text": "Sequence Labelling\nSequence Labelling\nIndependence assumption\n- Label does not depend on other labels\nP(A|X) = product_{i=1}^M P(a_i|X)\nDynamic programming"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 54,
+        "text": "Dynamic Programming\nalpha_t(j) = sum_{x_{1..t}; map(x_{1..t})=y_{1..j}} P(l_{1..t}|x_{1..t})\n- Probability of all sequences length t, which map to sequence Y_1, ..., Y_j\nExample:\nalpha_1(a) = P(x_1 = a)"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-016",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-016-01.wav", "question_text": "What is the dynamic programming initialization in the no-epsilon simplification?" },
+      { "role": "assistant", "expected_answer": "Initialization: alpha_1(1) = P(x_1 = y_1), and alpha_1(i) = 0 for i != 1." },
+      { "role": "user", "question_audio": "audio/multi-20-016-02.wav", "question_text": "And the recursion plus result?" },
+      { "role": "assistant", "expected_answer": "Calculation: alpha_t(j) = alpha_{t-1}(j-1) * P(x_t = y_j) + alpha_{t-1}(j) * P(x_t = y_j). Result: p(Y|X) = alpha_M(N)." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 58,
+        "text": "Dynamic Programming\nalpha_t(j) = sum_{x_{1..t}; map(x_{1..t})=y_{1..j}} P(l_{1..t}|x_{1..t})\n- Probability of all sequences length t, which map to sequence Y_1, ..., Y_j\nInitialization\n- alpha_1(1) = P(x_1 = y_1)\n- alpha_1(i) = 0 for i != 1"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 60,
+        "text": "Dynamic Programming\nInitialization\n- alpha_1(1) = P(x_1 = y_1)\n- alpha_1(j) = 0 for j != 1\nCalculation\n- alpha_t(j) = alpha_{t-1}(j-1) * P(x_t = y_j) + alpha_{t-1}(j) * P(x_t = y_j)\nResult:\n- p(Y|X) = alpha_M(N)"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-017",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-017-01.wav", "question_text": "How does the dynamic programming extend when the label sequence is interleaved with epsilon?" },
+      { "role": "assistant", "expected_answer": "For label sequence ab the extended sequence is εaεbε. Case 1: Y_i = ε. Case 2: Y_i = letter and Y_i != Y_{i-1}. Case 3: Y_i = letter and Y_i = Y_{i-1}." },
+      { "role": "user", "question_audio": "audio/multi-20-017-02.wav", "question_text": "How is the CTC model actually trained?" },
+      { "role": "assistant", "expected_answer": "Forward Pass: calculate label probabilities. Calculate sequence probability using CTC via dynamic programming. Backward pass: update weights." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 63,
+        "text": "Extension to Epsilon\nLabel sequence\n- ab -> εaεbε\nCase 1\n- Y_i = ε\nCase 2\n- Y_i = letter; Y_i != Y_{i-1}\nCase 3\n- Y_i = letter; Y_i = Y_{i-1}"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 65,
+        "text": "Training\nForward Pass\n- Calculate Label Probabilities\nCalculate Sequence Probability using CTC\n- Dynamic Programming\nBackward pass\n- Update Weights"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-018",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-018-01.wav", "question_text": "Walk me through CTC inference's naïve max approach." },
+      { "role": "assistant", "expected_answer": "Forward pass produces P(l_i | x_{1..n}). Select max probability per position: l_i. P(l_{1..n} | x_{1..n}) = P(l_1 | x_{1..n}) * ... * P(l_n | x_{1..n}). Then map to output sequence Y." },
+      { "role": "user", "question_audio": "audio/multi-20-018-02.wav", "question_text": "What's the issue with that approach?" },
+      { "role": "assistant", "expected_answer": "Most probable label sequence L might not be the most probable output sequence Y. Example: for Y=a sequences aa(0.2), εa(0.1), aε(0.1) summing to 0.4; for Y=b sequences bb(0.25), εb(0.05), bε(0.05). The most probable Labels is bb, but the most probable sequence is a (0.4). The solution is beam search: at each time step, map to character sequence and continue with the most probable." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 68,
+        "text": "Inference\nForward pass\n- P(l_i|x_{1..n})\nSelect max probability\n- l_i\n- P(l_{1..n}|x_{1..n}) = P(l_1|x_{1..n}) * .. * P(l_n|x_{1..n})"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 71,
+        "text": "Inference\nChallenge?\n- Most probable sequence L might be most probable sequence Y\nY=a\n- aa(0.2), εa(0.1), aε(0.1)\nY=b\n- bb(0.25), εb(0.05), bε(0.05)\nMost probable Labels\n- bb\nMost probable sequence\n- a(0.4)"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 72,
+        "text": "Inference\nIdea\n- Beam search\n- At each time step\n  - Map to character sequence\n  - Continue most probable"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-019",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-019-01.wav", "question_text": "What is the codebook role in Wav2Vec's quantization?" },
+      { "role": "assistant", "expected_answer": "Wav2Vec quantization uses a codebook. The intermediate representation is masked, and quantized representations (e.g. codebook indices 72 12 56 87 37) are produced for each time step." },
+      { "role": "user", "question_audio": "audio/multi-20-019-02.wav", "question_text": "How do positive and negative samples enter the contrastive loss?" },
+      { "role": "assistant", "expected_answer": "For a masked position, the model has to distinguish the true quantized codebook entry (positive) from other randomly sampled codebook entries (negative); the contrastive loss combined with the diversity loss trains the encoder and codebook." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 33,
+        "text": "Wav2Vec\nEncoder\n- Feature encoder\n- Context encoder\nMask intermediate representation\nQuantization\n- Codebook\n72 12 56 87 37"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 35,
+        "text": "Wav2Vec\nEncoder\n- Feature encoder\n- Context encoder\nMask intermediate representation\nQuantization\n- Codebook\nLoss\n- Diversity loss\n- Contrastive loss"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-020",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-020-01.wav", "question_text": "Why does sequence labelling for ASR rely on the independence assumption?" },
+      { "role": "assistant", "expected_answer": "Sequence labelling assumes a label does not depend on other labels: P(A|X) = product_{i=1}^M P(a_i|X). This independence assumption makes dynamic programming tractable for marginalizing over alignments." },
+      { "role": "user", "question_audio": "audio/multi-20-020-02.wav", "question_text": "Given X = X_1, X_2, X_3, X_4 and Y = ab without epsilons, give two example alignments." },
+      { "role": "assistant", "expected_answer": "Example alignments include 'aaab' (a in positions 1, 2, 3 and b in position 4) and 'aabb' (a in positions 1, 2 and b in positions 3, 4)." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 53,
+        "text": "Sequence Labelling\nIndependence assumption\n- Label does not depend on other labels\nP(A|X) = product_{i=1}^M P(a_i|X)\nDynamic programming"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 48,
+        "text": "Number of alignments\nHow many alignments between\n- X = X_1, ..., X_M\n- Y = Y_1, ..., Y_N\nSimplification\n- No Epsilons\nExample\n- X = X_1, X_2, X_3, X_4\n- Y = ab\naaab"
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 49,
+        "text": "Number of alignments\nExample\n- X = X_1, X_2, X_3, X_4\n- Y = ab\naabb"
+      }
+    ]
+  },
+  {
+    "id": "multi-20-021",
+    "turns": [
+      { "role": "user", "question_audio": "audio/multi-20-021-01.wav", "question_text": "Walk through the CTC alignment merging steps using the 'hello' example." },
+      { "role": "assistant", "expected_answer": "Starting from the CTC output 'h h e ε ε l l l ε l l o': first, merge repeat characters to get 'h e ε l ε l o'. Then, remove any ε tokens to get 'h e l l o'. The remaining characters are the output." },
+      { "role": "user", "question_audio": "audio/multi-20-021-02.wav", "question_text": "Why is the blank ε between the two l's necessary?" },
+      { "role": "assistant", "expected_answer": "Because of the repeated token rule: repeated tokens need to have a blank in-between. Without the blank ε between the two l's, the merge step would collapse them into a single l, giving 'helo' instead of 'hello'." }
+    ],
+    "context": [
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 44,
+        "text": "CTC Alignment\nIdea\nIntroduce blank token\n- Does not corresponded to character\n- Remove from output\nh h e ε ε l l l ε l l o\nFirst, merge repeat characters.\nh e ε l ε l o\nThen, remove any ε tokens.\nh e l l o\nThe remaining characters are the output."
+      },
+      {
+        "file": "20 - Automatic Speech Recognition (updated 03.02.2026).pdf",
+        "page": 45,
+        "text": "CTC Alignment\nAlgorithm\n- Merge Repeated characters\n- Remove blank\nRepeated token\n- Need to have blank in-between"
+      }
+    ]
+  }
+]

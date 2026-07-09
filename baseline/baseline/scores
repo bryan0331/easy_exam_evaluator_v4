@@ -1,0 +1,55 @@
+========================= 📊 RAG + ASR Joint Evaluation Summary Dashboard =========================
+name : baseline K10 500
+📊 🟢 Single-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.212
+ 🔹 BERTScore F1 Similarity   : 0.8766
+ 🔹 Answer Correctness        : 3.4667 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.12 / 5.0
+ 🔹 Retrieval Relevance       : 3.6933 / 5.0
+ 🔹 Answer Relevance          : 3.9467 / 5.0
+ 🔹 Context Precision         : 3.7067 / 5.0
+ 🔹 Context Recall            : 3.7067 / 5.0
+ ⏱️  Execution Time Cost (s)   : 3.562s (Max: 17.364s, Min: 0.894s)
+
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.874
+ 🔹 Answer Correctness        : 3.4133 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.9467 / 5.0
+ 🔹 Retrieval Relevance       : 3.6133 / 5.0
+ 🔹 Answer Relevance          : 3.76 / 5.0
+ 🔹 Context Precision         : 3.44 / 5.0
+ 🔹 Context Recall            : 3.48 / 5.0
+ ⏱️  Execution Time Cost (s)   : 3.795s (Max: 15.117s, Min: 0.893s)
+-------------------------------------------------------------------------------------
+
+📊 🔵 Multi-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.18
+ 🔹 BERTScore F1 Similarity   : 0.8553
+ 🔹 Answer Correctness        : 3.16 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.9267 / 5.0
+ 🔹 Retrieval Relevance       : 3.5133 / 5.0
+ 🔹 Answer Relevance          : 3.74 / 5.0
+ 🔹 Context Precision         : 3.3267 / 5.0
+ 🔹 Context Recall            : 2.76 / 5.0
+ ⏱️  Execution Time Cost (s)   : 9.062s (Max: 26.93s, Min: 2.904s)
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8573
+ 🔹 Answer Correctness        : 3.2 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.8533 / 5.0
+ 🔹 Retrieval Relevance       : 3.5667 / 5.0
+ 🔹 Answer Relevance          : 3.8133 / 5.0
+ 🔹 Context Precision         : 3.38 / 5.0
+ 🔹 Context Recall            : 2.6933 / 5.0
+ ⏱️  Execution Time Cost (s)   : 10.891s (Max: 164.183s, Min: 3.0s)
+-------------------------------------------------------------------------------------
+
+📊 🔥 Deep Learning Exam [Pure Text No-RAG Stream] (Total Evaluated Chunks: 51)
+ 🔹 BERTScore F1 Similarity   : 0.835
+ 🔹 Answer Correctness        : 2.8824 / 5.0
+ 🔹 Answer Relevance          : 3.1176 / 5.0
+ ⏱️  Execution Time Cost (s)   : 7.506s (Max: 14.229s, Min: 2.242s)
+
+==================================================================================================

@@ -1,0 +1,27 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: k10_750
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8655
+ 🔹 Answer Correctness        : 3.48 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.0133 / 5.0
+ 🔹 Retrieval Relevance       : 3.7467 / 5.0
+ 🔹 Answer Relevance          : 3.8933 / 5.0
+ 🔹 Context Precision         : 3.6 / 5.0
+ 🔹 Context Recall            : 3.4133 / 5.0
+ ⏱️  Execution Time Cost (s)   : 5.396s (Max: 15.72s, Min: 0.951s)
+-------------------------------------------------------------------------------------
+
+[🔵 Multi-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8387
+ 🔹 Answer Correctness        : 3.14 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.48 / 5.0
+ 🔹 Retrieval Relevance       : 3.5933 / 5.0
+ 🔹 Answer Relevance          : 3.72 / 5.0
+ 🔹 Context Precision         : 3.3733 / 5.0
+ 🔹 Context Recall            : 2.9333 / 5.0
+ ⏱️  Execution Time Cost (s)   : 17.858s (Max: 40.418s, Min: 5.769s)
+-------------------------------------------------------------------------------------

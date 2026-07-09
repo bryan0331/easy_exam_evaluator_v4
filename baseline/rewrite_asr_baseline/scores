@@ -1,0 +1,26 @@
+========================= 📊 RAG + ASR Joint Evaluation Summary Dashboard =========================
+name : rewrite baseline 35b
+📊 🟢 Single-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.2355
+ 🔹 BERTScore F1 Similarity   : 0.8594
+ 🔹 Answer Correctness        : 3.2533 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.0267 / 5.0
+ 🔹 Retrieval Relevance       : 3.7333 / 5.0
+ 🔹 Answer Relevance          : 3.64 / 5.0
+ 🔹 Context Precision         : 3.6133 / 5.0
+ 🔹 Context Recall            : 3.5467 / 5.0
+ ⏱️  Execution Time Cost (s)   : 8.614s (Max: 156.525s, Min: 1.642s)
+
+[🟢 Single-Turn Dialogue [Pure Text Standard Stream]] Report file does not exist, skipping.
+-------------------------------------------------------------------------------------
+
+📊 🔵 Multi-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.2478
+ 🔹 BERTScore F1 Similarity   : 0.8404
+ 🔹 Answer Correctness        : 2.8867 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.5733 / 5.0
+ 🔹 Retrieval Relevance       : 3.4333 / 5.0
+ 🔹 Answer Relevance          : 3.3467 / 5.0
+ 🔹 Context Precision         : 3.28 / 5.0
+ 🔹 Context Recall            : 2.7533 / 5.0
+ ⏱️  Execution Time Cost (s)   : 15.834s (Max: 44.225s, Min: 3.784s)

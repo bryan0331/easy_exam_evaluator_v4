@@ -1,0 +1,31 @@
+[🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+name: k10_1000_baseline
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8623
+ 🔹 Answer Correctness        : 3.5333 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.0133 / 5.0
+ 🔹 Retrieval Relevance       : 3.6133 / 5.0
+ 🔹 Answer Relevance          : 3.96 / 5.0
+ 🔹 Context Precision         : 3.5333 / 5.0
+ 🔹 Context Recall            : 3.4667 / 5.0
+ ⏱️  Execution Time Cost (s)   : 5.985s (Max: 20.008s, Min: 1.014s)
+-------------------------------------------------------------------------------------
+
+[🔵 Multi-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8383
+ 🔹 Answer Correctness        : 3.22 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.5333 / 5.0
+ 🔹 Retrieval Relevance       : 3.6467 / 5.0
+ 🔹 Answer Relevance          : 3.6067 / 5.0
+ 🔹 Context Precision         : 3.4867 / 5.0
+ 🔹 Context Recall            : 3.06 / 5.0
+ ⏱️  Execution Time Cost (s)   : 20.277s (Max: 189.381s, Min: 4.98s)
+-------------------------------------------------------------------------------------
+
+[🔥 Deep Learning Exam [Pure Text No-RAG Stream]] Report file does not exist, skipping.
+
+==================================================================================================

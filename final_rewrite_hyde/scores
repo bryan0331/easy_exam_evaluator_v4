@@ -1,0 +1,54 @@
+name: final_rewrite_hyde
+📊 🟢 Single-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.212
+ 🔹 BERTScore F1 Similarity   : 0.8664
+ 🔹 Answer Correctness        : 3.68 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.08 / 5.0
+ 🔹 Retrieval Relevance       : 4.0133 / 5.0
+ 🔹 Answer Relevance          : 3.9333 / 5.0
+ 🔹 Context Precision         : 4.08 / 5.0
+ 🔹 Context Recall            : 4.0533 / 5.0
+ ⏱️  Execution Time Cost (s)   : 17.971s (Max: 27.552s, Min: 1.209s)
+
+📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.8722
+ 🔹 Answer Correctness        : 3.9733 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.44 / 5.0
+ 🔹 Retrieval Relevance       : 4.2133 / 5.0
+ 🔹 Answer Relevance          : 4.16 / 5.0
+ 🔹 Context Precision         : 4.1467 / 5.0
+ 🔹 Context Recall            : 4.2133 / 5.0
+ ⏱️  Execution Time Cost (s)   : 17.9s (Max: 27.588s, Min: 1.22s)
+-------------------------------------------------------------------------------------
+
+📊 🔵 Multi-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.18
+ 🔹 BERTScore F1 Similarity   : 0.8463
+ 🔹 Answer Correctness        : 3.3733 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.0267 / 5.0
+ 🔹 Retrieval Relevance       : 4.06 / 5.0
+ 🔹 Answer Relevance          : 3.8667 / 5.0
+ 🔹 Context Precision         : 3.8733 / 5.0
+ 🔹 Context Recall            : 3.3533 / 5.0
+ ⏱️  Execution Time Cost (s)   : 41.438s (Max: 68.563s, Min: 31.411s)
+
+📊 🔵 Multi-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.0
+ 🔹 BERTScore F1 Similarity   : 0.848
+ 🔹 Answer Correctness        : 3.5 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 3.1133 / 5.0
+ 🔹 Retrieval Relevance       : 4.22 / 5.0
+ 🔹 Answer Relevance          : 3.88 / 5.0
+ 🔹 Context Precision         : 3.8733 / 5.0
+ 🔹 Context Recall            : 3.4067 / 5.0
+ ⏱️  Execution Time Cost (s)   : 41.754s (Max: 64.746s, Min: 31.815s)
+-------------------------------------------------------------------------------------
+
+📊 🔥 Deep Learning Exam [Pure Text No-RAG Stream] (Total Evaluated Chunks: 51)
+ 🔹 BERTScore F1 Similarity   : 0.818
+ 🔹 Answer Correctness        : 3.2157 / 5.0
+ 🔹 Answer Relevance          : 3.6275 / 5.0
+ ⏱️  Execution Time Cost (s)   : 20.717s (Max: 155.893s, Min: 4.264s)
+
+==================================================================================================

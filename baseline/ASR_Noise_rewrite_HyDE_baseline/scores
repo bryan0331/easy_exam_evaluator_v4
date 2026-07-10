@@ -1,0 +1,33 @@
+========================= 📊 RAG + ASR Joint Evaluation Summary Dashboard =========================
+name: asr_noise_hyde_rewrite
+📊 🟢 Single-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 75)
+ 🔹 Word Error Rate (WER)     : 0.212
+ 🔹 BERTScore F1 Similarity   : 0.8622
+ 🔹 Answer Correctness        : 3.2933 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.92 / 5.0
+ 🔹 Retrieval Relevance       : 3.92 / 5.0
+ 🔹 Answer Relevance          : 3.52 / 5.0
+ 🔹 Context Precision         : 3.8667 / 5.0
+ 🔹 Context Recall            : 3.7333 / 5.0
+ ⏱️  Execution Time Cost (s)   : 7.238s (Max: 17.194s, Min: 1.195s)
+
+[🟢 Single-Turn Dialogue [Pure Text Standard Stream]] Report file does not exist, skipping.
+-------------------------------------------------------------------------------------
+
+📊 🔵 Multi-Turn Dialogue [With ASR Audio Stream] (Total Evaluated Chunks: 150)
+ 🔹 Word Error Rate (WER)     : 0.18
+ 🔹 BERTScore F1 Similarity   : 0.8368
+ 🔹 Answer Correctness        : 3.2467 / 5.0
+ 🔹 Groundedness (Anti-Hal)   : 2.78 / 5.0
+ 🔹 Retrieval Relevance       : 4.02 / 5.0
+ 🔹 Answer Relevance          : 3.5667 / 5.0
+ 🔹 Context Precision         : 4.02 / 5.0
+ 🔹 Context Recall            : 3.46 / 5.0
+ ⏱️  Execution Time Cost (s)   : 22.397s (Max: 193.792s, Min: 8.265s)
+
+[🔵 Multi-Turn Dialogue [Pure Text Standard Stream]] Report file does not exist, skipping.
+-------------------------------------------------------------------------------------
+
+[🔥 Deep Learning Exam [Pure Text No-RAG Stream]] Report file does not exist, skipping.
+
+==================================================================================================

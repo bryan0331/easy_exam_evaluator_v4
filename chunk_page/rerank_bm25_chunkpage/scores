@@ -1,5 +1,5 @@
 [🟢 Single-Turn Dialogue [With ASR Audio Stream]] Report file does not exist, skipping.
-name: k5_rerank_2
+name: k5_rerank_bm25_chunkpage
 📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
  🔹 Word Error Rate (WER)     : 0.0
  🔹 BERTScore F1 Similarity   : 0.881

@@ -1,4 +1,4 @@
-name: k10_rewrite_2
+name: k10_rewrite_chunkpage
 📊 🟢 Single-Turn Dialogue [Pure Text Standard Stream] (Total Evaluated Chunks: 75)
  🔹 Word Error Rate (WER)     : 0.0
  🔹 BERTScore F1 Similarity   : 0.8655
